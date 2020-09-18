@@ -1,6 +1,12 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "jaime.rios.dev",
+  "description": "Source code for my personal website",
+  "author": {
+    "name": "Jaime Rios",
+    "email": "jaime.rios.dev@outlook.com",
+    "url": "https://jaime.rios.dev"
+  },
+  "license": "Copyright (C) 2020 Jaime Madrigal",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

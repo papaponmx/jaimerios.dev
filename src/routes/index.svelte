@@ -1,46 +1,39 @@
+<script lang="ts">
+</script>
+
 <style>
-	h1, figure, p {
+	main {
 		text-align: center;
+		padding: 1em;
+		max-width: 240px;
 		margin: 0 auto;
 	}
 
 	h1 {
-		font-size: 2.8em;
+		color: #ff3e00;
 		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
+		font-size: 4rem;
+		font-weight: 100;
 	}
 
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
+	@media (min-width: 640px) {
+		main {
+			max-width: none;
 		}
 	}
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Jaime Rios: Senior Front End Developer</title>
 </svelte:head>
 
-<h1>Great success!</h1>
 
-<figure>
-	<img alt='Success Kid' src='successkid.jpg'>
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
+<main>
+	<header>
+		<h1>Hi, I am Jaime</h1>
+		<h3>A Senior Front End Developer</h3>
+		<p>From static websites, to scaleable web applications, to one on one mentoring. I help awesome people to build ambitious yet accessible web applications.</p>
+		<p>I'm an independent creative developer from Mexico City. </p>
+	</header>
+</main>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>

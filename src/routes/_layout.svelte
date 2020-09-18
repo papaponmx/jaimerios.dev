@@ -1,10 +1,16 @@
 <script>
 	import Nav from '../components/Nav.svelte';
+  import Footer from '../components/Footer.svelte';
 
 	export let segment;
 </script>
 
 <style>
+:global(:root){
+  --primary-color: #ff3e00;
+}
+
+
 	main {
 		position: relative;
 		max-width: 56em;
@@ -16,7 +22,7 @@
 </style>
 
 <Nav {segment}/>
-
 <main>
 	<slot></slot>
 </main>
+<Footer {segment}/>
