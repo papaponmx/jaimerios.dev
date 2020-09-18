@@ -8,5 +8,5 @@
 
 
 <footer>
-  Copyright 2020 Jaime Rios
+  <!-- Copyright 2020 Jaime Rios -->
 </footer>
