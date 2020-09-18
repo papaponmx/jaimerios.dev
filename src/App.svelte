@@ -3,8 +3,12 @@
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<header>
+		<h1>Hi, I am Jaime {name}!</h1>
+		<h3>A Senior Front End Developer</h3>
+		<p>From static websites, to scaleable web applications, to one on one mentoring. I help awesome people to build ambitious yet accessible web applications.</p>
+		<p>I'm an independent creative developer from Mexico City. </p>
+	</header>
 </main>
 
 <style>
@@ -18,7 +22,7 @@
 	h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
-		font-size: 4em;
+		font-size: 4rem;
 		font-weight: 100;
 	}
 
