@@ -4,4 +4,4 @@
 
 <h1>Contact me</h1>
 
-<p>This is the 'about' page. There's not much here.</p>
+<!-- <p>This is the 'Con' page. There's not much here.</p> -->
