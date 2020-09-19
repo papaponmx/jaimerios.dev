@@ -39,7 +39,7 @@ State if you are open to contributions and what your requirements are for accept
 
 <!-- TODO: Authors and acknowledgment  add libraries used -->
 <!-- Show your appreciation to those who have contributed to the project. -->
-
+I customized the wicked cool background on my homepage at SVGBackgrounds.com.
 <!-- TODO: License -->
 
 ## Project status
