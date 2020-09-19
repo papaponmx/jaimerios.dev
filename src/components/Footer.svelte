@@ -6,7 +6,3 @@
 </style>
 
 <footer>Copyright 2020 Jaime Rios</footer>
-
-<script lang="ts">
-  export const segment = "";
-</script>

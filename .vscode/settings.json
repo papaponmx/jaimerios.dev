@@ -1,5 +1,6 @@
 {
     "editor.formatOnSave": true,
     "prettier.jsxSingleQuote": true,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "prettier.configPath": "./.prettierrc.js"
 }

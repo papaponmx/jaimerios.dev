@@ -28,6 +28,8 @@ Tell people where they can go to for help. It can be any combination of an issue
 [] Connect my blog to dev.to
 [] Create a services page.
 [] Improve lighthouse score.
+[] Install Typescript
+[] Create sitemap
 [] Test for a11y.
 [] Resolve TODO comments in the code from this code.
 [] Create a blog post and launch website.
