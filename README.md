@@ -25,6 +25,7 @@ Tell people where they can go to for help. It can be any combination of an issue
 [] Create home page MVP
 [] Add contact form
 [] Add portfolio
+[] Add animations
 [] Connect my blog to dev.to
 [] Create a services page.
 [] Improve lighthouse score.
@@ -33,6 +34,7 @@ Tell people where they can go to for help. It can be any combination of an issue
 [] Test for a11y.
 [] Resolve TODO comments in the code from this code.
 [] Create a blog post and launch website.
+<!-- [] IDEA: Add this background effect: https://codepen.io/Johnm__/pen/qZqgGJ -->
 
 
 <!-- Contributing and

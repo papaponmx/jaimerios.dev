@@ -1,14 +1,18 @@
 <style>
   :global(:root) {
     --primary-color: #ff3e00;
+    --footer-height: 4.6875rem;
+    --navigation-height: 12.5rem;
+    --main-height: calc(100vh - (var(--footer-height) * 2.25));
+    --spacing-unit: 1.125rem;
   }
 
   main {
-    position: relative;
     background-color: white;
-    padding: 2em;
-    margin: 0 auto;
     box-sizing: border-box;
+    height: var(--main-height);
+    padding: 2em;
+    position: relative;
   }
 </style>
 

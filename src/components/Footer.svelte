@@ -1,7 +1,11 @@
 <style>
   footer {
-    padding: 20px;
-    max-width: 22.22px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: var(--spacing-unit);
+    height: var(--footer-height);
+    /* background-color: tomato; */
   }
 </style>
 
