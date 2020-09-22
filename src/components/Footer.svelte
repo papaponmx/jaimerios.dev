@@ -10,3 +10,7 @@
 </style>
 
 <footer>Copyright 2020 Jaime Rios</footer>
+
+<script>
+  export let segment;
+</script>
