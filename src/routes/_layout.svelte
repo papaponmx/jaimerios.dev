@@ -20,7 +20,7 @@
 <main>
   <slot />
 </main>
-<Footer segment="{segment}" />
+<Footer />
 
 <script>
   import Nav from '../components/Nav.svelte';
