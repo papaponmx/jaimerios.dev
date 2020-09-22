@@ -13,4 +13,5 @@
 
 <script>
   export let segment;
+  console.log(segment);
 </script>
