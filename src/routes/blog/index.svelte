@@ -19,7 +19,7 @@
 
 <script context="module">
   export function preload({ params, query }, session) {
-    return this.fetch(session.BLOG_API_URL)
+    return this.fetch(`${session.BLOG_API_URL}/articles?username=papaponmx`)
       .then(r => r.json())
       .then(posts => {
         return { posts };
