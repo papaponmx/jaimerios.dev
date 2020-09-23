@@ -1,14 +1,12 @@
 <style>
   main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
+    padding: 1rem;
+    max-width: 15rem;
     margin: 0 auto;
   }
 
   h1 {
-    color: #ff3e00;
-    /* text-transform: uppercase; */
+    color: var(--primary-color);
     font-size: 4rem;
     font-weight: 100;
     margin-bottom: 0.25rem;
@@ -28,12 +26,30 @@
 
   p {
     text-align: justify;
-    max-width: 450px;
+    max-width: 28.125rem;
   }
-  @media (min-width: 640px) {
+  @media (min-width: 40rem) {
     main {
       max-width: none;
     }
+  }
+
+  .cta-wrapper {
+    margin-top: calc(var(--spacing-unit) * 1);
+  }
+
+  a {
+    border: 0.0313rem solid var(--primary-color);
+    text-decoration: none;
+    border-radius: calc(var(--spacing-unit) / 4);
+    padding: calc(var(--spacing-unit) / 2);
+    margin-right: calc(var(--spacing-unit) / 2);
+  }
+  a:hover,
+  a:focus {
+    color: #ffffff;
+    box-shadow: inset 0 0 0 2rem var(--primary-color);
+    transition-duration: 250ms;
   }
 </style>
 
