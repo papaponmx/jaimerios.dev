@@ -22,15 +22,16 @@ Tell people where they can go to for help. It can be any combination of an issue
 
 ## Roadmap
 
-- [ ] Create home page MVP
-- [ ] Add contact form
-- [ ] Add portfolio
-- [ ] Add animations
-- [ ] Connect my blog to dev.to
+- [X] Create home page MVP
+- [X] Connect my blog to dev.to
+- [ ] Add blog markup.
+- [ ] Add contact page.
+- [ ] Add portfolio.
+- [ ] Add animations.
 - [ ] Create a services page.
 - [ ] Improve lighthouse score.
-- [ ] Install Typescript
-- [ ] Create sitemap
+- [ ] Install Typescript.
+- [ ] Create sitemap.
 - [ ] Test for a11y.
 - [ ] Resolve TODO comments in the code from this code.
 - [ ] Create a blog post and launch website.
@@ -48,7 +49,7 @@ State if you are open to contributions and what your requirements are for accept
 ## Credits
 
 I customized the wicked cool background on my homepage at SVGBackgrounds.com.
-Icons were added using Font awesome icons, [link to license](https://fontawesome.com/license)
+Icons were added using Font awesome icons, [link to license](https://fontawesome.com/license).
 
 ## License
 Project Licensed under [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE.md)
