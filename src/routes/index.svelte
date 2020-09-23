@@ -79,9 +79,3 @@
     <a href="blog">Blog</a>
   </div>
 </main>
-
-<script lang="ts">
-  export function preload({ params, query }) {
-    return this.fetch('sitemap.xml');
-  }
-</script>
