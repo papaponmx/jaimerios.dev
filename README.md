@@ -41,7 +41,6 @@ Tell people where they can go to for help. It can be any combination of an issue
 TODO: Add instructions for running project locally and submitting PRs
 State if you are open to contributions and what your requirements are for accepting them. -->
 
-<!-- TODO: Authors and acknowledgment  add libraries used -->
 <!-- Show your appreciation to those who have contributed to the project. -->
 
 
@@ -49,8 +48,10 @@ State if you are open to contributions and what your requirements are for accept
 ## Credits
 
 I customized the wicked cool background on my homepage at SVGBackgrounds.com.
+Icons were added using Font awesome icons, [link to license](https://fontawesome.com/license)
 
-<!-- TODO: License -->
+## License
+Project Licensed under [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE.md)
 
 ## Project status
 MVP in progress.
