@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <style>
   main {
     text-align: center;
@@ -48,10 +45,17 @@
   <header>
     <h1>Hi, I am Jaime</h1>
     <h3>A Senior Front End Developer</h3>
-      <p>
-        <!-- TODO: Validate this offer with my niche -->
-        From static websites, to scaleable modern web applications. I help awesome people to build ambitious yet accessible web
-        applications.
-      </p>
+    <p>
+      <!-- TODO: Validate this offer with my niche -->
+      From static websites, to scaleable modern web applications. I help awesome
+      people to build ambitious yet accessible web applications.
+    </p>
   </header>
+  <div class="cta-wrapper">
+    <a href="portfolio">Portfolio</a>
+    <a href="blog">Ready my blog</a>
+  </div>
 </main>
+
+<script lang="ts">
+</script>
