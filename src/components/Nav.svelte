@@ -28,13 +28,13 @@
   }
 
   [aria-current]::after {
-    position: absolute;
-    content: '';
-    width: calc(100% - 1em);
-    height: 2px;
     background-color: rgb(255, 62, 0);
+    bottom: -0.0625rem;
+    content: '';
     display: block;
-    bottom: -1px;
+    height: 0.125rem;
+    position: absolute;
+    width: calc(100% - 1em);
   }
 
   a {
