@@ -81,4 +81,7 @@
 </main>
 
 <script lang="ts">
+  export function preload({ params, query }) {
+    return this.fetch('sitemap.xml');
+  }
 </script>
