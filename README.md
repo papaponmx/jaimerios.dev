@@ -25,6 +25,7 @@ Tell people where they can go to for help. It can be any combination of an issue
 - [X] Create home page MVP
 - [X] Connect my blog to dev.to
 - [ ] Add blog markup.
+- [ ] Add codepen examples.
 - [ ] Add contact page.
 - [ ] Add portfolio.
 - [ ] Add animations.
