@@ -45,26 +45,27 @@
 
   .cta-wrapper {
     margin-top: calc(var(--spacing-unit) * 1);
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    font-size: calc(var(--spacing-unit) * 2);
+    font-weight: 200;
   }
 
   a {
     border-bottom: 1px solid var(--pomegranate-color);
     font-weight: 600;
-    /* box-shadow: 0 0.5px var(--twine-color); */
-    /* border-radius: calc(var(--spacing-unit) / 4); */
     color: var(--mirage-color);
     text-decoration: none;
     padding: calc(var(--spacing-unit) / 2);
     margin-right: calc(var(--spacing-unit) / 2);
+    min-width: 100%;
   }
 
-  a:first-of-type {
-    margin-right: calc(var(--spacing-unit) * 2);
-  }
   a:hover,
   a:focus {
+    box-shadow: inset 0 0 0 3rem var(--pomegranate-color);
     color: #ffffff;
-    box-shadow: inset 0 0 0 2rem var(--pomegranate-color);
     transition-duration: 250ms;
   }
 </style>
