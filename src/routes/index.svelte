@@ -7,7 +7,6 @@
 
   h1 {
     color: var(--pomegranate-color);
-    font-size: 4rem;
     font-weight: 100;
     margin-bottom: 0.25rem;
   }
@@ -20,17 +19,27 @@
   }
 
   h3 {
-    font-weight: 700;
+    font-weight: 400;
     color: var(--mirage-color);
   }
 
-  p {
-    text-align: justify;
-    max-width: 28.125rem;
-  }
   @media (min-width: 40rem) {
     main {
       max-width: none;
+    }
+
+    h1 {
+      font-size: calc(var(--base-font-size) * 8);
+    }
+    h3 {
+      font-weight: 200;
+      font-size: calc(var(--base-font-size) * 3);
+    }
+
+    span {
+      font-weight: 500;
+      /* filter: brightness(310%); */
+      color: var(--mirage-color-color);
     }
   }
 
@@ -67,12 +76,7 @@
 <main>
   <header>
     <h1>Hi, I am Jaime</h1>
-    <h3>A Senior Front End Developer</h3>
-    <p>
-      <!-- TODO: Validate this offer with my niche -->
-      From static websites, to scaleable modern web applications. I help awesome
-      people to build ambitious yet accessible web applications.
-    </p>
+    <h3>Freelance <span>Front End</span> Developer</h3>
   </header>
   <div class="cta-wrapper">
     <a href="portfolio">Portfolio</a>
