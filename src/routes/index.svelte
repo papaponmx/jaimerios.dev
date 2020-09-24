@@ -1,4 +1,8 @@
 <style>
+  /**
+   * Routes/index.svelte
+   *  **/
+
   main {
     padding: 1rem;
     max-width: 15rem;

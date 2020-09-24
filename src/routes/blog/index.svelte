@@ -25,8 +25,20 @@
         return { posts };
       });
   }
+
+  // What do I need to do?
+  // 1. Set initial blog post to 0
+  // 2. Get the next 5 blog posts
+  // 3. Update that markup.
+  //   4. Get the previous 5
+  //
+  //
+  //
+  //
+  //
+  //
 </script>
 
-<script>
+<script lang="ts">
   export let posts;
 </script>
