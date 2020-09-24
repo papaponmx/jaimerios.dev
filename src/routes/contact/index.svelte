@@ -1,4 +1,11 @@
 <style>
+  h1 {
+    color: var(--pomegranate-color);
+    font-size: calc(var(--base-font-size) * 3);
+    font-weight: 200;
+    max-width: 250px;
+  }
+
   section {
     display: flex;
     justify-content: flex-start;
