@@ -45,6 +45,7 @@
 </style>
 
 <nav>
+  <!-- IDEA: Add a services page -->
   <ul>
     <li>
       <a
