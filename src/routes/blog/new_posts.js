@@ -12,7 +12,7 @@ export async function get(req, res) {
   fetch(URL)
     .then(r => r.json())
     .then(posts => {
-      res.end(JSON.stringify({ ...posts }));
+      res.end(JSON.stringify([...posts]));
     })
     .catch(error => console.log('🛑 Error on new_posts endpoint', error));
 }
