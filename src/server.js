@@ -9,15 +9,15 @@ const { PORT, NODE_ENV, BLOG_API_URL } = process.env;
 const dev = NODE_ENV === 'development';
 
 polka() // You can also use Express
-	.use(
-		compression({ threshold: 0 }),
-		sirv('static', { dev }),
-		sapper.middleware({
+  .use(
+    compression({ threshold: 0 }),
+    sirv('static', { dev }),
+    sapper.middleware({
       session: () => ({
-        BLOG_API_URL
-      })
+        BLOG_API_URL,
+      }),
     })
-	)
-	.listen(PORT, err => {
-		if (err) console.log('error', err);
-	});
+  )
+  .listen(PORT, err => {
+    if (err) console.log('error', err);
+  });
