@@ -75,7 +75,11 @@
 </style>
 
 <svelte:head>
-  <title>Jaime Rios: Senior Front End Developer</title>
+  <title>Jaime Rios: Freelance Front End Developer</title>
+  <meta
+    name="description"
+    content="I'm a Freelance Front End developer. As a Dev, I can turn your ideas into web applications."
+  />
 </svelte:head>
 
 <main>
