@@ -19,19 +19,26 @@
     box-sizing: border-box;
     height: var(--main-height);
     padding: 2em;
-    position: relative;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
   }
 </style>
 
-<Nav segment="{segment}" />
-<main>
-  <slot />
-</main>
-<Footer />
+<div class="wrapper">
+  <Nav segment="{segment}" />
+  <main>
+    <slot />
+  </main>
+  <!-- <Footer /> -->
+</div>
 
 <script>
   import Nav from '../components/Nav.svelte';
-  import Footer from '../components/Footer.svelte';
+  // TODO: Add footer and keep it at the bottom
+  // import Footer from '../components/Footer.svelte';
 
   export let segment;
 </script>
