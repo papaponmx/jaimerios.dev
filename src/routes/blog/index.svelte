@@ -48,6 +48,7 @@
       </a>
     </li>
   {/each}
+  <!-- <button on:click={getNextFivePosts}>Get  new Posts</button> -->
 </ul>
 
 <script context="module">
@@ -74,7 +75,5 @@
 </script>
 
 <script>
-  import { each } from 'svelte/internal';
-
   export let posts;
 </script>
