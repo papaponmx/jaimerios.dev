@@ -32,6 +32,17 @@
   .content :global(li) {
     margin: 0 0 0.5em 0;
   }
+
+  .content :global(),
+  .content :global(a) {
+    font-size: 1.375rem;
+    font-weight: 300;
+    max-width: 100%;
+  }
+
+  .content :global(h1) {
+    font-size: 3.5rem;
+  }
 </style>
 
 <svelte:head>
@@ -41,8 +52,7 @@
 <h1>{post.title}</h1>
 
 <div class="content">
-  <!-- TODO: Create markup using the content from the API -->
-  <!-- {@html post.html} -->
+  {@html post.body_html}
 </div>
 
 <script context="module">
