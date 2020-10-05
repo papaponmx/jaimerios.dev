@@ -73,16 +73,19 @@
         href="blog"
       >blog</a>
     </li>
-    <li>
-      <a
+    {#if isDev}
+      <li>
+        <a
         aria-current="{segment === 'portfolio' ? 'page' : undefined}"
         rel="prefetch"
         href="portfolio"
-      >portfolio</a>
-    </li>
+        >portfolio</a>
+      </li>
+    {/if}
   </ul>
 </nav>
 
 <script>
   export let segment;
+  const isDev = process.env.NODE_ENV === 'development';
 </script>

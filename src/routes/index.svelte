@@ -88,7 +88,11 @@
     <h3>Freelance <span>Front End</span> Developer</h3>
   </header>
   <div class="cta-wrapper">
-    <a href="portfolio">Portfolio</a>
     <a href="blog">Blog</a>
+    {#if isDev}<a href="portfolio">Portfolio</a>{/if}
   </div>
 </main>
+
+<script>
+  const isDev = process.env.NODE_ENV === 'development';
+</script>

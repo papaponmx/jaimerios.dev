@@ -33,15 +33,26 @@
     margin: 0 0 0.5em 0;
   }
 
-  .content :global(),
-  .content :global(a) {
+  :global(.content) {
     font-size: 1.375rem;
     font-weight: 300;
     max-width: 100%;
   }
 
-  .content :global(h1) {
-    font-size: 3.5rem;
+  :global(.content a) {
+    max-width: fit-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  :global(article h1) {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: calc(42px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  article {
+    max-width: 100%;
+    padding: 0.5rem;
   }
 </style>
 
@@ -49,11 +60,13 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<article>
+  <h1>{post.title}</h1>
 
-<div class="content">
-  {@html post.body_html}
-</div>
+  <div class="content">
+    {@html post.body_html}
+  </div>
+</article>
 
 <script context="module">
   export async function preload({ params, _query }, session) {

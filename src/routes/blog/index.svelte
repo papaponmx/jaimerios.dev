@@ -6,7 +6,6 @@
   }
 
   li {
-    /* border: 0.1px solid #aaa; */
     color: var(--mirage-color);
     min-height: calc(100vh - 6.25rem);
     margin-bottom: 1rem;
