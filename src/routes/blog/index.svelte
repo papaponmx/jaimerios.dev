@@ -59,7 +59,8 @@
 
   export function preload({ _params, _query }, session) {
     const { BLOG_NEW_POSTS_URL } = session;
-    return this.fetch('blog/new_posts')
+    const URL = `${process.env.VERCEL_URL}/${BLOG_NEW_POSTS_URL}`;
+    return this.fetch(URL)
       .then(r => r.json())
       .then(posts => {
         return { posts };
