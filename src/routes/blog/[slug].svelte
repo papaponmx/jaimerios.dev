@@ -51,8 +51,18 @@
   }
 
   article {
-    max-width: 100%;
+    width: calc(100% - 12.5rem);
+    display: flex;
+    flex-direction: column;
     padding: 0.5rem;
+    width: calc(100% - 12.5rem);
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .content {
+    align-self: center;
+    max-width: 35rem;
   }
 </style>
 
