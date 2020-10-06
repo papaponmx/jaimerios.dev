@@ -63,6 +63,9 @@
       .then(r => r.json())
       .then(posts => {
         return { posts };
+      })
+      .catch(error => {
+        return JSON.stringify(null, 2, error);
       });
   }
 
