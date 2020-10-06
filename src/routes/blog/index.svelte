@@ -59,7 +59,7 @@
 
   export function preload({ _params, _query }, session) {
     const { BLOG_NEW_POSTS_URL } = session;
-    return this.fetch(BLOG_NEW_POSTS_URL)
+    return this.fetch('blog/new_posts')
       .then(r => r.json())
       .then(posts => {
         return { posts };
