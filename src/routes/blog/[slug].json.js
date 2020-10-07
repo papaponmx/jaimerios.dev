@@ -16,5 +16,6 @@ export async function get(req, res) {
       const posts = articles.filter(post => post.id !== 286357);
       res.end(JSON.stringify([...posts]));
     })
+    // IDEA: Parse HTML and add attributes to img tags so they can lazy load on the client.
     .catch(error => console.log('🛑 Error on new_posts endpoint', error));
 }
