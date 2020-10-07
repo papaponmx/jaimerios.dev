@@ -7,9 +7,9 @@
 
   li {
     color: var(--mirage-color);
-    min-height: calc(100vh - 6.25rem);
+    /* min-height: calc(100vh - 6.25rem); */
     margin-bottom: 1rem;
-    padding: 3rem;
+    padding: 1.5rem;
   }
 
   li a {
@@ -17,17 +17,27 @@
   }
 
   h2 {
-    font-size: 4.25rem;
+    font-size: 2.25rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--mirage-color);
     margin-bottom: 0;
+    max-width: 40.625rem;
     font-weight: 200;
   }
 
   time {
+    /* TODO: Change this color for a more constrasting one */
     color: var(--napa-color);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
     margin-top: -2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 0.3125rem;
+    margin-bottom: 0rem;
   }
 </style>
 
@@ -42,8 +52,8 @@
     <li>
       <a rel="prefetch" href="blog/{post.slug}">
         <h2>{post.title}</h2>
-        <time>{new Date(post.published_at).toDateString()}</time>
         <p>{post.description}</p>
+        <time>{new Date(post.published_at).toDateString()}</time>
       </a>
     </li>
   {/each}
@@ -58,7 +68,7 @@
   // };
 
   export function preload({ _params, _query }, session) {
-    return this.fetch('blog.json')
+    return this.fetch('/blog.json')
       .then(r => r.json())
       .then(posts => {
         return { posts };
