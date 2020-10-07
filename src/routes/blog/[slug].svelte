@@ -82,13 +82,12 @@
 
 <script context="module">
   export async function preload({ params, _query }, session) {
-    const res = await this.fetch(
-      `${session.BLOG_API_URL}/articles/papaponmx/${params.slug}`
-    );
-    const data = await res.json();
+    const URL = session.BLOG_API_URL + '/articles/papaponmx/' + params.slug;
+    const res = await this.fetch(URL);
+    const post = await res.json();
 
     if (res.status === 200) {
-      return { post: data };
+      return { post };
     } else {
       this.error(res.status, data.message);
     }
