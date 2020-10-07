@@ -12,7 +12,8 @@ export async function get(req, res) {
     },
   })
     .then(r => r.json())
-    .then(posts => {
+    .then(articles => {
+      const posts = articles.filter(post => post.id !== 286357);
       res.end(JSON.stringify([...posts]));
     })
     .catch(error => console.log('🛑 Error on new_posts endpoint', error));
