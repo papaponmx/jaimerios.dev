@@ -15,6 +15,7 @@
   "scripts": {
     "build": "sapper build --legacy",
     "dev": "sapper dev",
+    "dev:prod": "sapper export && npx serve __sapper__/export",
     "export": "sapper export --legacy",
     "format": "npx prettier --write ./**/*.{js,svelte,md,html,css,json}",
     "lint:fix": "eslint --fix './**/*.{js,svelte}'",
