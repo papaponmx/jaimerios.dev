@@ -2,7 +2,8 @@ const fetch = require('node-fetch');
 
 export async function get(req, res) {
   const { DEV_API_KEY } = process.env;
-  const URL = 'https://dev.to/api/articles?username=papaponmx';
+  const { slug } = req.params;
+  const URL = 'https://dev.to/api/articles/papaponmx/' + slug;
 
   fetch(URL, {
     headers: {
