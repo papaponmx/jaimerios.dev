@@ -72,7 +72,8 @@
       .then(r => r.json())
       .then(posts => {
         return { posts };
-      });
+      })
+      .catch(err => 'Error is ' + JSON.stringify(null, 2, err));
   }
 
   // TODO: Add Intersection Observer API implementation
