@@ -12,9 +12,8 @@ export async function get(req, res) {
     },
   })
     .then(r => r.json())
-    .then(articles => {
-      const posts = articles.filter(post => post.id !== 286357);
-      res.end(JSON.stringify([...posts]));
+    .then(article => {
+      res.end(JSON.stringify(article));
     })
     // IDEA: Parse HTML and add attributes to img tags so they can lazy load on the client.
     .catch(error => console.log('🛑 Error on new_posts endpoint', error));
