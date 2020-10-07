@@ -7,7 +7,6 @@
 
   li {
     color: var(--mirage-color);
-    /* min-height: calc(100vh - 6.25rem); */
     margin-bottom: 1rem;
     padding: 1.5rem;
   }
@@ -45,8 +44,6 @@
   <title>Blog</title>
 </svelte:head>
 
-<!-- <h1>Recent posts</h1> -->
-
 <ul>
   {#each posts as post}
     <li>
@@ -57,16 +54,9 @@
       </a>
     </li>
   {/each}
-  <!-- <button on:click={getNextFivePosts}>Get  new Posts</button> -->
 </ul>
 
 <script context="module">
-  // const getNextFivePosts = () => {
-  //   if (process.browser) {
-  //     fetch('blog/new_posts');
-  //   }
-  // };
-
   export function preload({ _params, _query }, session) {
     return this.fetch('/blog.json')
       .then(r => r.json())
@@ -75,12 +65,6 @@
       })
       .catch(err => 'Error is ' + JSON.stringify(null, 2, err));
   }
-
-  // TODO: Add Intersection Observer API implementation
-  // What do I need to do?
-  // ✅ 1. Set initial blog post to 0
-  //  2. Get the next 5 blog posts
-  //  3. Update that markup.
 </script>
 
 <script>
