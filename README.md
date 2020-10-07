@@ -52,7 +52,7 @@ State if you are open to contributions and what your requirements are for accept
 I customized the wicked cool background on my homepage at SVGBackgrounds.com.
 Icons were added using Font awesome icons, [link to license](https://fontawesome.com/license).
 
-## License
+## License
 Project Licensed under [GNU AFFERO GENERAL PUBLIC LICENSE](LICENSE.md)
 
 ## Project status
