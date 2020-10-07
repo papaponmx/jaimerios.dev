@@ -71,11 +71,13 @@
 </svelte:head>
 
 <article>
-  <h1>{post.title}</h1>
+  {#if post}
+    <h1>{post.title}</h1>
 
-  <div class="content">
-    {@html post.body_html}
-  </div>
+    <div class="content">
+      {@html post.body_html}
+    </div>
+  {/if}
 </article>
 
 <script context="module">
@@ -95,4 +97,5 @@
 
 <script>
   export let post;
+  $: console.log('', post);
 </script>
