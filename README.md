@@ -1,6 +1,6 @@
 # jaimerios.io
-
-The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
+<!-- TODO: Add other Badges -->
+[![jaimerios.io](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/o7umst/main&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/o7umst/runs)
 
 ## Description
 This project includes code for jaimerios.dev. This website intended to:
@@ -10,7 +10,6 @@ This project includes code for jaimerios.dev. This website intended to:
 - Provide people with an easy way to get in touch.
 - Host my own blog.
 
-<!-- TODO: Add Badges -->
 
 <!-- TODO: Visuals, specially a compelling image about my website -->
 
