@@ -12,6 +12,8 @@
 <section>
   <p>
     From static websites, to scaleable modern web applications. I help awesome
-    people to build ambitious <span>(fast, scalable, accesible)</span> web applications.
+    people to build ambitious
+    <span>(fast, scalable, accesible)</span>
+    web applications.
   </p>
 </section>

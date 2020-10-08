@@ -49,9 +49,7 @@
   let subject;
   let isFormValid = false;
 
-  const handleSubmit = () => {
-    debugger;
-  };
+  const handleSubmit = () => {};
 
   $: email && message && name && subject ? (isFormValid = true) : null;
 </script>
