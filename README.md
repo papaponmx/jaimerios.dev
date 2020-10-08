@@ -1,6 +1,6 @@
 # jaimerios.io
 <!-- TODO: Add other Badges -->
-[![jaimerios.io](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/o7umst/main&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/o7umst/runs)
+[![jaimerios.io](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/o7umst&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/o7umst/runs)
 
 ## Description
 This project includes code for jaimerios.dev. This website intended to:
