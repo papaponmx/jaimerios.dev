@@ -82,7 +82,8 @@
 
 <script context="module">
   export async function preload({ params, _query }, session) {
-    const URL = session.BLOG_API_URL + '/articles/papaponmx/' + params.slug;
+    // const URL = session.BLOG_API_URL + '/articles/papaponmx/' + params.slug;
+    const URL = 'blog/' + params.slug + '.json';
     const res = await this.fetch(URL);
     const post = await res.json();
 
