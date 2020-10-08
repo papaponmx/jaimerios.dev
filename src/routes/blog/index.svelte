@@ -46,7 +46,7 @@
 
 <ul>
   {#each posts as post}
-    <li>
+    <li class="posts-list">
       <a rel="prefetch" href="blog/{post.slug}">
         <h2>{post.title}</h2>
         <p>{post.description}</p>
