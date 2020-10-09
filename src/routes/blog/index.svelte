@@ -3,40 +3,59 @@
     margin: 0 0 1em 0;
     line-height: 1.5;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   li {
     color: var(--mirage-color);
-    margin-bottom: 1rem;
-    padding: 1.5rem;
+    max-width: 600px;
+    margin-bottom: 2.25rem;
   }
 
   li a {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 600px;
   }
 
   h2 {
-    font-size: 2.25rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--mirage-color);
-    margin-bottom: 0;
-    max-width: 40.625rem;
-    font-weight: 200;
+    font-size: 1.75rem;
+    color: var(--mirage-accent-color);
+    font-weight: 400;
   }
 
   time {
-    /* TODO: Change this color for a more constrasting one */
-    color: var(--napa-color);
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-top: -2rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: -1rem;
   }
 
-  p {
-    font-size: 1.25rem;
-    font-weight: 300;
-    margin-top: 0.3125rem;
-    margin-bottom: 0rem;
+  .row {
+    margin-top: -0.65rem;
+  }
+
+  .row span {
+    color: var(--mirage-color);
+  }
+
+  .tag {
+    margin-right: 0.5rem;
+    font-weight: 200;
+    font-size: 0.75rem;
+    color: var(--mirage-color);
+    border: 1px solid gray;
+    padding: 1px 6px;
+    border-radius: 25px;
+  }
+  .tag:hover {
+    cursor: default;
   }
 </style>
 
@@ -49,8 +68,13 @@
     <li class="posts-list">
       <a rel="prefetch" href="blog/{post.slug}">
         <h2>{post.title}</h2>
-        <p>{post.description}</p>
-        <time>{new Date(post.published_at).toDateString()}</time>
+        <div class="row">
+          <span>{post.user.name}</span>
+          <time>{new Date(post.published_at).toDateString()}</time>
+        </div>
+        <div class="tags__row">
+          {#each post.tag_list as tag}<span class="tag">{tag}</span>{/each}
+        </div>
       </a>
     </li>
   {/each}
