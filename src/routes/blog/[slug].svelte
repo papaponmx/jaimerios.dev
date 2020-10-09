@@ -55,14 +55,28 @@
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
+    max-width: 100vw;
     width: calc(100% - 12.5rem);
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 
   .content {
     align-self: center;
     max-width: 35rem;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    color: var(--mirage-accent-color);
+    font-weight: 400;
+  }
+
+  header {
+    width: 35rem;
+    max-width: 100%;
+    height: calc(100vh - 200px);
+    text-align: left;
   }
 </style>
 
@@ -72,7 +86,10 @@
 
 <article>
   {#if post}
-    <h1>{post.title}</h1>
+    <header>
+      <h1>{post.title}</h1>
+      <Tags tagsList="{post.tags}" />
+    </header>
     <div class="content">
       {@html post.body_html}
     </div>
@@ -94,5 +111,6 @@
 </script>
 
 <script>
+  import Tags from '../../components/Tags.svelte';
   export let post;
 </script>
