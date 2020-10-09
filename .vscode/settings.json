@@ -3,5 +3,22 @@
   "prettier.jsxSingleQuote": true,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
   "prettier.configPath": "./.prettierrc.js",
-  "eslint.alwaysShowStatus": true
+  "eslint.alwaysShowStatus": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#ac6f13",
+    "activityBar.activeBorder": "#0a5638",
+    "activityBar.background": "#ac6f13",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#0a5638",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#7e510e",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#ac6f13",
+    "titleBar.activeBackground": "#7e510e",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#7e510e99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#7e510e"
 }
