@@ -24,6 +24,10 @@
     width: 600px;
   }
 
+  a:hover h2 {
+    color: var(--pomegranate-color);
+  }
+
   h2 {
     font-size: 1.75rem;
     color: var(--mirage-accent-color);
@@ -45,17 +49,13 @@
     color: var(--mirage-color);
   }
 
-  .tag {
-    margin-right: 0.5rem;
-    font-weight: 200;
-    font-size: 0.75rem;
-    color: var(--mirage-color);
-    border: 1px solid gray;
-    padding: 1px 6px;
-    border-radius: 25px;
-  }
-  .tag:hover {
-    cursor: default;
+  hr {
+    border: none;
+    height: 1px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.12);
   }
 </style>
 
@@ -72,10 +72,9 @@
           <span>{post.user.name}</span>
           <time>{new Date(post.published_at).toDateString()}</time>
         </div>
-        <div class="tags__row">
-          {#each post.tag_list as tag}<span class="tag">{tag}</span>{/each}
-        </div>
+        <Tags tagsList="{post.tag_list}" />
       </a>
+      <hr />
     </li>
   {/each}
 </ul>
@@ -92,5 +91,6 @@
 </script>
 
 <script>
+  import Tags from '../../components/Tags.svelte';
   export let posts;
 </script>
