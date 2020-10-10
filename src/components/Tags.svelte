@@ -2,8 +2,15 @@
   .tags--row {
     display: flex;
     flex-wrap: wrap;
-    /* max-width: calc(100% - calc(var(--spacing-unit) / 4)); */
+    max-width: (100vw - 1rem);
   }
+
+  @media screen and (max-width: 400px) {
+    .tags--row {
+      width: 300px;
+    }
+  }
+
   .tag {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;

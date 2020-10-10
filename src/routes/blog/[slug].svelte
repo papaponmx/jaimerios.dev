@@ -45,20 +45,14 @@
     text-overflow: ellipsis;
   }
 
-  :global(article h1) {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: calc(42px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  }
-
   article {
-    width: calc(100% - 12.5rem);
+    align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
-    max-width: 100vw;
-    width: calc(100% - 12.5rem);
     justify-content: center;
-    align-items: center;
+    max-width: 100vw;
+    padding: 0.5rem;
+    width: calc(100% - 12.5rem);
   }
 
   .content {
@@ -67,16 +61,33 @@
   }
 
   h1 {
-    font-size: 2.75rem;
     color: var(--mirage-accent-color);
+    font-size: 2.5rem;
     font-weight: 400;
+    margin-bottom: 0.2rem;
   }
 
   header {
-    width: 35rem;
     max-width: 100%;
-    height: calc(100vh - 200px);
     text-align: left;
+    width: 35rem;
+  }
+  @media screen and (max-width: 650px) {
+    article {
+      min-width: calc(100vw - 2rem);
+      margin-left: -1rem;
+    }
+    header h1 {
+      width: calc(100vw - 2.75rem);
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+      margin-left: -1rem;
+      max-width: calc(100% - 1.5rem);
+    }
   }
 </style>
 
@@ -89,6 +100,7 @@
     <header>
       <h1>{post.title}</h1>
       <Tags tagsList="{post.tags}" />
+      <hr />
     </header>
     <div class="content">
       {@html post.body_html}
