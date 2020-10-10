@@ -44,6 +44,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  :global(blockquote) {
+    background: #ededed;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 1.25rem 1.2em 1.875rem;
+    border-left: 6px solid var(--mirage-accent-color);
+  }
 
   article {
     align-items: center;
