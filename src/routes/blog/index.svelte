@@ -58,12 +58,19 @@
   }
 
   @media screen and (max-width: 30em) {
+    h2 {
+      font-size: 1.25rem;
+    }
     ul {
       padding: 0;
     }
     li,
     li a {
       max-width: calc(100% - 1rem);
+    }
+
+    li {
+      margin-bottom: -2rem;
     }
   }
 </style>
