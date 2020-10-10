@@ -11,7 +11,6 @@
 
   li {
     color: var(--mirage-color);
-    max-width: 600px;
     margin-bottom: 2.25rem;
   }
 
@@ -56,6 +55,16 @@
     margin-bottom: 3rem;
     flex-shrink: 0;
     background-color: rgba(0, 0, 0, 0.12);
+  }
+
+  @media screen and (max-width: 30em) {
+    ul {
+      padding: 0;
+    }
+    li,
+    li a {
+      max-width: calc(100% - 1rem);
+    }
   }
 </style>
 
