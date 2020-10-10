@@ -48,15 +48,6 @@
     color: var(--mirage-color);
   }
 
-  hr {
-    border: none;
-    height: 1px;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    flex-shrink: 0;
-    background-color: rgba(0, 0, 0, 0.12);
-  }
-
   @media screen and (max-width: 30em) {
     h2 {
       font-size: 1.25rem;
@@ -90,7 +81,7 @@
         </div>
         <Tags tagsList="{post.tag_list}" />
       </a>
-      <hr />
+      <HorizonalRule />
     </li>
   {/each}
 </ul>
@@ -107,6 +98,7 @@
 </script>
 
 <script>
+  import HorizonalRule from '../../components/HorizonalRule.svelte';
   import Tags from '../../components/Tags.svelte';
   export let posts;
 </script>
