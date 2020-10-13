@@ -31,6 +31,12 @@
       "reAttach": true,
       "url": "http://localhost:3000/index.html",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "pwa-chrome",
+      "name": "http://localhost:3000",
+      "request": "launch",
+      "url": "http://localhost:3000"
     }
   ]
 }
