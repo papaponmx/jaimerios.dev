@@ -1,5 +1,6 @@
 <style>
   svg {
+    display: none;
     height: 50px;
     animation: none;
   }
@@ -14,12 +15,12 @@
       }
     }
     svg {
+      display: block;
       position: absolute;
       right: 0;
       top: 0;
 
-      animation-delay: 10s;
-      animation: slide-bl 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slide-bl 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 5s both;
     }
   }
 </style>
