@@ -19,7 +19,7 @@
     "dev": "sapper dev",
     "export": "sapper export --legacy",
     "format": "npx prettier --write ./**/*.{js,svelte,md,html,css,json}",
-    "install": "npm run install && npm run install --only=dev",
+    "install:dev": "npm run install --only=dev",
     "lint:fix": "eslint --fix './**/*.{js,svelte}'",
     "lint": "eslint './**/*.{js,svelte}'",
     "prelint": "npm run format",
