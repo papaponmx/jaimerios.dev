@@ -59,12 +59,23 @@
   </header>
 
   <p>
-    I am a self-taught developer who has been coding for the web since 2016. I
-    specialize in accessibility and usability without sacrificing performance.
+    I am a self-taught developer who started coding {daysAgo()}. I specialize in
+    accessibility and usability without sacrificing performance.
   </p>
+
+  <p>Coding is both my hobbie and my profession</p>
 </section>
 <Comet />
 
 <script>
   import Comet from './../components/Comet.svelte';
+
+  const daysAgo = () => {
+    const startDate = new Date('6/16/2015').getTime();
+    const today = new Date().getTime();
+    const timeDifference = today - startDate;
+
+    const numberOfDays = Math.round(timeDifference / (1000 * 3600 * 24));
+    return `${numberOfDays.toLocaleString()} days ago`;
+  };
 </script>
