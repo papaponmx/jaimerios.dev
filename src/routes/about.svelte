@@ -34,14 +34,19 @@
     letter-spacing: 0.75px;
   }
 
-  p {
+  p,
+  ul,
+  li {
     max-width: 550px;
     font-size: 1.25rem;
     letter-spacing: 0.1px;
     line-height: 1.2;
-    margin-top: 4rem;
     color: #333333;
     font-weight: 300;
+  }
+
+  article {
+    margin-top: 4rem;
   }
 </style>
 
@@ -58,12 +63,37 @@
     </div>
   </header>
 
-  <p>
-    I am a self-taught developer who started coding {daysAgo()}. I specialize in
-    accessibility and usability without sacrificing performance.
-  </p>
+  <article>
+    <p>
+      I am a self-taught developer who started coding {daysAgo()}. I specialize
+      in accessibility and usability without sacrificing performance.
+    </p>
 
-  <p>Coding is both my hobbie and my profession</p>
+    <p>
+      Coding is both my job and my hobbie. On my free timem, I work with a
+      select group of colleagues to create amazing webistes.
+    </p>
+
+    <p>
+      I am passionate about creating accessible, beutiful and engaging webistes
+      in order to improve the lifes of the end users.
+    </p>
+
+    <p>
+      Another activity I am passionate about is teaching others, I like to do
+      so:
+    </p>
+    <ul>
+      <li>
+        By teaching aspiring developers how to code so they can land their first
+        job in tech.
+      </li>
+      <li>
+        Docummenting my journey in <a href="/blog">my blog</a> and sharing with the
+        community so others can avoid some of the problems I have faced and grow
+      </li>
+    </ul>
+  </article>
 </section>
 <Comet />
 
