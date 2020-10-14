@@ -2,17 +2,13 @@
   h1 {
     color: var(--mirage-accent-color);
     font-size: calc(var(--base-font-size) * 7);
-    font-weight: 600;
+    font-weight: 800;
   }
 
   section {
     color: var(--mirage-color);
     font-weight: 200;
   }
-
-  /* header {
-    height: 70vh;
-  } */
 
   hr {
     background-color: var(--pomegranate-color--lighter);

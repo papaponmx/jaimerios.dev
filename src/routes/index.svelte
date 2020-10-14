@@ -11,7 +11,7 @@
 
   h1 {
     color: var(--pomegranate-color);
-    font-weight: 100;
+    font-weight: 800;
     margin-bottom: 0.25rem;
   }
 
