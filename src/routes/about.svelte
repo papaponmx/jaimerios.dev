@@ -70,8 +70,8 @@
     </p>
 
     <p>
-      Coding is both my job and my hobbie. On my free timem, I work with a
-      select group of colleagues to create amazing webistes.
+      Coding is both my job and my hobbie. On my free time, I work with a select
+      group of clients to create amazing webistes.
     </p>
 
     <p>
@@ -80,8 +80,8 @@
     </p>
 
     <p>
-      Another activity I am passionate about is teaching others, I like to do
-      so:
+      Another activity I am passionate about is teaching others, I like to do so
+      in a few ways:
     </p>
     <ul>
       <li>
