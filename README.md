@@ -26,6 +26,8 @@ Tell people where they can go to for help. It can be any combination of an issue
 - [x] Create home page MVP
 - [x] Connect my blog to dev.to
 - [x] Add blog markup.
+
+- [ ] Update blog markup so it resembles [this](https://videofruit.com/blog/partnership-marketing/).
 - [ ] Add contact page.
 - [ ] Create sitemap.
 - [ ] Add codepen examples.

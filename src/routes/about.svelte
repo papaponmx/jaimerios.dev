@@ -15,7 +15,7 @@
     border: none;
     height: 5px;
     width: 30px;
-    margin-top: 9px;
+    margin-top: 18px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -31,7 +31,9 @@
   .subheading--row span {
     text-indent: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.75px;
+    letter-spacing: 0.5px;
+    font-size: 28px;
+    color: #343434;
   }
 
   p,
@@ -45,8 +47,55 @@
     font-weight: 300;
   }
 
+  section {
+    display: grid;
+    grid-template-rows: 70vh 20vh 70vh;
+    grid-template-columns: repeat(5, auto);
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .arrow {
+    text-align: center;
+    margin: 8% 0;
+    grid-area: 2 / -5 / -5 / -6;
+  }
+  .bounce {
+    display: none;
+    animation: bounce 3s 3 15s;
+    align-self: end;
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      display: block;
+      transform: translateY(0);
+    }
+    40% {
+      display: block;
+      transform: translateY(-30px);
+    }
+    60% {
+      display: block;
+      transform: translateY(-15px);
+    }
+  }
+
+  header {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+
   article {
-    margin-top: 4rem;
+    text-align: left;
+    align-self: center;
+    grid-area: 3 / 1/ 3 / 5;
   }
 </style>
 
@@ -62,7 +111,15 @@
       <span> A Web Developer from Mexico, <br /> programming worldwide. </span>
     </div>
   </header>
-
+  <div class="arrow bounce">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+    ><path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
+  </div>
   <article>
     <p>
       I am a self-taught developer who started coding {daysAgo()}. I specialize
