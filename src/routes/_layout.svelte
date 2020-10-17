@@ -6,6 +6,7 @@
     --pomegranate-color: #ff3e00; /* Main brand color: This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity. */
     --pomegranate-color--lighter: #ff3e00d4; /* Main brand color: This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity. */
     --twine-color: #bc9653; /* Dark accent: Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best. */
+    --rose-color: #a207d9;
     --mirage-accent-color: #007dbf;
     --mirage-color: #1b2b31; /* Dark shades: Use as the text color for dark-on-light designs, or as the background for inverted designs. */
 

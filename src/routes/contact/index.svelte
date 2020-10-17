@@ -1,9 +1,8 @@
 <style>
   h1 {
-    color: var(--pomegranate-color);
-    font-size: calc(var(--base-font-size) * 3);
-    font-weight: 200;
-    max-width: 250px;
+    color: var(--rose-color);
+    font-size: calc(var(--base-font-size) * 7);
+    font-weight: 800;
   }
 
   section {
@@ -48,7 +47,12 @@
 <svelte:head>
   <title>Contact</title>
 </svelte:head>
-<h1>Contact me</h1>
+<h1>Contact</h1>
+
+<p>For project ideas, speaking ideas or just to say hello</p>
+
+<a href="mailto:jaime.rios@hey.com">jaime.rios@hey.com</a>
+
 <section>
   <h3>You find me online on the following social networks</h3>
   <ul>
