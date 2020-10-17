@@ -49,24 +49,13 @@
 
   section {
     display: grid;
-    grid-template-rows: 70vh 20vh 70vh;
+    grid-template-rows: auto 0 70vh;
     grid-template-columns: repeat(5, auto);
   }
 
   a {
     color: white;
     text-decoration: none;
-  }
-
-  .arrow {
-    text-align: center;
-    margin: 8% 0;
-    grid-area: 2 / -5 / -5 / -6;
-  }
-  .bounce {
-    display: none;
-    animation: bounce 3s 3 15s;
-    align-self: end;
   }
 
   @keyframes bounce {
@@ -111,15 +100,6 @@
       <span> A Web Developer from Mexico, <br /> programming worldwide. </span>
     </div>
   </header>
-  <div class="arrow bounce">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      height="24"
-      viewBox="0 0 24 24"
-      width="24"
-    ><path d="M0 0h24v24H0z" fill="none"></path>
-      <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg>
-  </div>
   <article>
     <p>
       I am a self-taught developer who started coding {daysAgo()}. I specialize
