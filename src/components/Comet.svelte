@@ -20,7 +20,7 @@
       right: 0;
       top: 0;
 
-      animation: slide-bl 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 5s both;
+      animation: slide-bl 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.5s both;
     }
   }
 </style>
