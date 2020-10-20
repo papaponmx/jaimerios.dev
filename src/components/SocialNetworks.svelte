@@ -1,15 +1,15 @@
 <style>
-  .social-networks--wrapper {
-    grid-column: 1 / 10;
-    grid-row-start: 10;
-  }
-
   section.social-networks--wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     max-width: 500px;
+    margin-left: 1.5rem;
+    padding-bottom: 4rem;
+
+    grid-column: 1 / 10;
+    grid-row-start: 10;
   }
 
   img {
@@ -18,7 +18,8 @@
 
   ul {
     display: flex;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: space-between;
     padding-left: 0;
     list-style: none;
     max-width: 500px;
@@ -34,11 +35,15 @@
     color: var(--mirage-color);
   }
 
+  p {
+    font-size: 1.75rem;
+  }
+
   /* TODO: Animate hover states */
 </style>
 
 <section class="social-networks--wrapper">
-  <p>You find me online on the following social networks</p>
+  <p>If you’d like to follow my work online here’s where you can find me:</p>
   <ul>
     {#each socialNetworks as socialNetwork}
       <li>
