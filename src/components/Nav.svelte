@@ -1,6 +1,7 @@
 <style>
   nav {
-    border-bottom: 1px solid rgba(255, 62, 0, 0.1);
+    background-color: var(--baby-powder-color);
+    /* border-bottom: 1px solid rgba(255, 62, 0, 0.1); */
     font-weight: 300;
     padding: 0 1em;
   }
@@ -76,9 +77,9 @@
     {#if isDev}
       <li>
         <a
-        aria-current="{segment === 'portfolio' ? 'page' : undefined}"
-        rel="prefetch"
-        href="portfolio"
+          aria-current="{segment === 'portfolio' ? 'page' : undefined}"
+          rel="prefetch"
+          href="portfolio"
         >portfolio</a>
       </li>
     {/if}
