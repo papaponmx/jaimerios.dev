@@ -64,7 +64,7 @@
     color: var(--mirage-color);
   }
 
-  @media screen and (max-width: 30em) {
+  @media screen and (max-width: 50em) {
     ul {
       margin: 0 0 1em 0;
       display: flex;

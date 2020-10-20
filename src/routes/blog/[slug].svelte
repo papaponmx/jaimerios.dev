@@ -69,8 +69,8 @@
 
   h1 {
     color: var(--mirage-accent-color);
-    font-size: 2.5rem;
-    font-weight: 400;
+    font-size: 4.5rem;
+    font-weight: 800;
     margin-bottom: 0.2rem;
   }
 
@@ -85,6 +85,7 @@
       margin-left: -1rem;
     }
     header h1 {
+      font-size: 4.45rem;
       width: calc(100vw - 2.75rem);
     }
 
