@@ -20,8 +20,12 @@
   main {
     background-color: white;
     box-sizing: border-box;
-    height: var(--main-height);
+    min-height: var(--main-height);
     padding: 2em;
+  }
+
+  .blog {
+    background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
   }
 
   .wrapper {
@@ -32,7 +36,7 @@
 
 <div class="wrapper">
   <Nav segment="{segment}" />
-  <main>
+  <main class="{segment === 'blog' && 'blog'}">
     <slot />
   </main>
   <!-- <Footer /> -->

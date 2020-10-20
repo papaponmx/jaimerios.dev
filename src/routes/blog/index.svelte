@@ -1,17 +1,21 @@
 <style>
   ul {
-    margin: 0 0 1em 0;
     line-height: 1.5;
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+    /* grid-template-rows: repeat(12, ); */
+    padding: 2rem;
   }
 
   li {
     color: var(--mirage-color);
-    margin-bottom: 2.25rem;
+    background-color: var(--baby-powder-color);
+    box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+    border-radius: 20px;
+    padding: 1rem;
   }
 
   li a {
@@ -20,7 +24,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 600px;
+    /* width: 600px; */
   }
 
   a:hover h2 {
@@ -49,6 +53,13 @@
   }
 
   @media screen and (max-width: 30em) {
+    ul {
+      margin: 0 0 1em 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
     h2 {
       font-size: 1.25rem;
     }
@@ -61,7 +72,8 @@
     }
 
     li {
-      margin-bottom: -2rem;
+      /* border-bottom: 1px solid #cfcfcf; */
+      margin-bottom: 1.5rem;
     }
   }
 </style>
@@ -81,7 +93,6 @@
         </div>
         <Tags tagsList="{post.tag_list}" />
       </a>
-      <HorizonalRule />
     </li>
   {/each}
 </ul>
@@ -98,7 +109,6 @@
 </script>
 
 <script>
-  import HorizonalRule from '../../components/HorizonalRule.svelte';
   import Tags from '../../components/Tags.svelte';
   export let posts;
 </script>
