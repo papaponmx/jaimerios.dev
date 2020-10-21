@@ -34,6 +34,7 @@
     letter-spacing: 0.5px;
     font-size: 28px;
     color: #343434;
+    max-width: calc(100% - 2rem);
   }
 
   p,
@@ -50,7 +51,7 @@
   section {
     display: grid;
     grid-template-rows: auto 0 70vh;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   a {
@@ -84,7 +85,14 @@
   article {
     text-align: left;
     align-self: center;
-    grid-area: 3 / 1/ 3 / 5;
+    grid-area: 5 / 1/ 3 / 5;
+  }
+
+  @media screen and (max-width: 43.75rem) {
+    h1 {
+      line-height: 0.8;
+      margin-bottom: 7rem;
+    }
   }
 </style>
 
