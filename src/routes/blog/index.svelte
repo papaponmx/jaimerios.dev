@@ -15,6 +15,7 @@
     background-color: var(--baby-powder-color);
     padding: 1rem;
     max-width: 400px;
+    border-radius: 20px;
   }
 
   li:hover {
