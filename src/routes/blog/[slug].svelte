@@ -85,7 +85,7 @@
       margin-left: -1rem;
     }
     header h1 {
-      font-size: 4.45rem;
+      font-size: 3.25rem;
       width: calc(100vw - 2.75rem);
     }
 
