@@ -27,8 +27,8 @@ Tell people where they can go to for help. It can be any combination of an issue
 - [x] Connect my blog to dev.to
 - [x] Add blog markup.
 
-- [ ] Add contact page.
-- [ ] Update blog markup so it resembles [this](https://videofruit.com/blog/partnership-marketing/).
+- [x] Add contact page.
+- [x] Update blog markup so it resembles [this](https://videofruit.com/blog/partnership-marketing/).
 - [ ] Create sitemap.
 - [ ] Add codepen examples.
 - [ ] Add portfolio.
