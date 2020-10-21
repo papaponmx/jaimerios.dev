@@ -39,11 +39,28 @@
     font-size: 1.75rem;
   }
 
+  @media screen and (max-width: 30rem) {
+    section.social-networks--wrapper {
+      margin: 0;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 2.5rem);
+      grid-template-rows: repeat(2, 3rem);
+      gap: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+  }
+
   /* TODO: Animate hover states */
 </style>
 
 <section class="social-networks--wrapper">
-  <p>If you’d like to follow my work online here’s where you can find me:</p>
+  <p>If you’d like to follow my work online, here is where you can find me:</p>
   <ul>
     {#each socialNetworks as socialNetwork}
       <li>

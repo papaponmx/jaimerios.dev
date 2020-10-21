@@ -1,7 +1,8 @@
 <style>
   :global(:root) {
     /* Color Pallette  */
-    --baby-powder-color: #f2f5f2; /* Light shades: Use this color as the background for your dark-on-light designs, or the text color of an inverted design. */
+    --baby-powder-color: #ffffff; /* Light shades: Use this color as the background for your dark-on-light designs, or the text color of an inverted design. */
+    /* --baby-powder-color: #f2f5f2; Light shades: Use this color as the background for your dark-on-light designs, or the text color of an inverted design. */
     --napa-color: #ada191; /* Light accent: Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette. */
     --pomegranate-color: #ff3e00; /* Main brand color: This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity. */
     --pomegranate-color--lighter: #ff3e00d4; /* Main brand color: This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity. */
@@ -24,9 +25,13 @@
     padding: 2em;
   }
 
-  .blog {
-    background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
-  }
+  /* .blog {
+    background-image: linear-gradient(
+      180deg,
+      var(--baby-powder-color) 0%,
+      var(--mirage-accent-color) 124%
+    );
+  } */
 
   .wrapper {
     display: flex;

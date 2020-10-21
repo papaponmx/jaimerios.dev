@@ -26,7 +26,7 @@
     grid-column: 1 / 10;
     grid-row: 3 / 5;
     margin-top: 4rem;
-    line-height: 1.2;
+    line-height: 1.5;
   }
 
   .email {
@@ -40,6 +40,32 @@
   .cta--paragraph,
   .email {
     margin-left: 2rem;
+  }
+
+  @media screen and (max-width: 30rem) {
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    section.contact-page--wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 70vh;
+    }
+    p,
+    .cta--paragraph,
+    .email {
+      margin-left: 0;
+    }
+
+    p,
+    .email {
+      font-size: 1.5rem;
+    }
+    .email {
+      color: var(--rose-color);
+      font-weight: 700;
+    }
   }
 </style>
 
@@ -58,8 +84,6 @@
     href="mailto:jaime.rios@hey.com?subject=Mail from jaimerios.io"
     class="email"
   >jaime.rios@hey.com</a>
-
-  <!-- TODO: Move this into its own commponent -->
 </section>
 <SocialNetworks />
 
