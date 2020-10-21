@@ -132,11 +132,8 @@
     </ul>
   </article>
 </section>
-<Comet />
 
 <script>
-  import Comet from './../components/Comet.svelte';
-
   const daysAgo = () => {
     const startDate = new Date('6/16/2015').getTime();
     const today = new Date().getTime();
