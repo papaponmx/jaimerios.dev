@@ -1,9 +1,9 @@
 require('dotenv').config();
 
 const fs = require('fs');
-const fetch = require('node-fetch');
+const node_fetch = require('node-fetch');
 
-const URL = 'https://dev.to/api/articles?username=papaponmx';
+const BLOG_URL = 'https://dev.to/api/articles?username=papaponmx';
 const BASE_URL = process.env.VERCEL_URL || 'https://jaimerios.io';
 const pages = [''];
 
@@ -14,7 +14,7 @@ fs.readdirSync('./src/routes').forEach(file => {
   }
 });
 
-const render = (pages, posts) => `<?xml version="1.0" encoding="UTF-8" ?>
+const render: Function = (pages, posts):string => `<?xml version="1.0" encoding="UTF-8" ?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   ${pages
     .map(
@@ -39,7 +39,7 @@ const render = (pages, posts) => `<?xml version="1.0" encoding="UTF-8" ?>
 </urlset>
 `;
 
-fetch(URL, {
+node_fetch(BLOG_URL, {
   headers: {
     'Content-Type': 'application/json',
   },
