@@ -1,0 +1,9 @@
+:root {
+  --baseline: 1.4;
+  line-height: var(--baseline)
+}
+
+// rvr stands for responsive vertical rhythm
+@function rvr($multiple) {
+  @return calc(var(--baseline) * #{$multiple} * 1rem);
+}
