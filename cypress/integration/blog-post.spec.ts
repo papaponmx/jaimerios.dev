@@ -18,10 +18,9 @@ context('Blog Post', () => {
 		});
 
 		it('should redirect to blog post page', () => {
-			cy.get('.posts-list > a:first').click().then(() => {
-				cy.get('h1').should('exist');
-				cy.get('article').should('exist');
-			});
+      cy.visit('http://localhost:3000/blog/a-hitchhikers-guide-to-web-images-on-2019-203j');
+      cy.get('h1').should('exist');
+      cy.get('article').should('exist');
 		});
 	});
 });

@@ -30,7 +30,7 @@ Tell people where they can go to for help. It can be any combination of an issue
 - [x] Add contact page.
 - [x] Update blog markup so it resembles [this](https://videofruit.com/blog/partnership-marketing/).
 - [x] Create sitemap.
-- [] Create sitemap e2e test.
+- [x] Create sitemap e2e test.
 - [ ] Add codepen examples.
 - [ ] Add portfolio.
 - [ ] Add animations.
