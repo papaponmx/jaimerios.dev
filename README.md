@@ -31,12 +31,12 @@ Tell people where they can go to for help. It can be any combination of an issue
 - [x] Update blog markup so it resembles [this](https://videofruit.com/blog/partnership-marketing/).
 - [x] Create sitemap.
 - [x] Create sitemap e2e test.
+- [x] Install Typescript.
 - [ ] Add codepen examples.
 - [ ] Add portfolio.
 - [ ] Add animations.
 - [ ] Create a services page.
 - [ ] Improve lighthouse score.
-- [ ] Install Typescript.
 - [ ] Test for a11y.
 - [ ] Resolve TODO comments in the code from this code.
 - [ ] Create a blog post and launch website.

@@ -97,6 +97,6 @@
   </div>
 </main>
 
-<script>
-  const isDev = process.env.NODE_ENV === 'development';
+<script lang="typescript">
+  const isDev: boolean = process.env.NODE_ENV === 'development';
 </script>
