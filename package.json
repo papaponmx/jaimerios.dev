@@ -15,15 +15,16 @@
   "scripts": {
     "build": "sapper build --legacy",
     "cypress:open": "npx cypress open",
-    "dev:prod": "sapper export && npx serve __sapper__/export",
+    "dev:prod": "npm run export && npx serve __sapper__/export",
     "dev": "sapper dev",
-    "export": "sapper export --legacy",
+    "export": "npm run sitemap && sapper export --legacy",
     "format": "npx prettier --write ./**/*.{js,svelte,md,html,css,json}",
     "install:dev": "npm run install --only=dev",
     "lint:fix": "eslint --fix './**/*.{js,svelte}'",
     "lint": "eslint './**/*.{js,svelte}'",
     "prelint": "npm run format",
     "pretest": "npm run lint",
+    "sitemap": "node src/sitemap.js",
     "start": "node __sapper__/build"
   },
   "dependencies": {
@@ -64,7 +65,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run sitemap"
     }
   },
   "lint-staged": {
