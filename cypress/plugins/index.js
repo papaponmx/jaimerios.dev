@@ -12,7 +12,7 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-const rollupPreprocessor = require('@bahmutov/cy-rollup');
+// const rollupPreprocessor = require('@bahmutov/cy-rollup');
 
 /**
  * @type {Cypress.PluginConfig}
@@ -20,12 +20,12 @@ const rollupPreprocessor = require('@bahmutov/cy-rollup');
 
 // eslint-disable-next-line
 module.exports = (on, config) => {
-  const options = {
-    // Provide an alternative rollup config file.
-    // The default is rollup.config.js at the project root.
-    configFile: 'cypress/rollup-test.config.js',
-  };
+  // const options = {
+  // Provide an alternative rollup config file.
+  // The default is rollup.config.js at the project root.
+  // configFile: 'cypress/rollup-test.config.js',
+  // };
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-  on('file:preprocessor', rollupPreprocessor(options));
+  // on('file:preprocessor', rollupPreprocessor(options));
 };
