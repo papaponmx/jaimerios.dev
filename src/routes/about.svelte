@@ -165,7 +165,7 @@
   </article>
 </section>
 
-<script>
+<script lang="typescript">
   const daysAgo = () => {
     const startDate = new Date('6/16/2015').getTime();
     const today = new Date().getTime();

@@ -141,7 +141,7 @@
   }
 </script>
 
-<script>
+<script lang="typescript">
   import HorizonalRule from '../../components/HorizonalRule.svelte';
   import Tags from '../../components/Tags.svelte';
 

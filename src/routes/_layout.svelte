@@ -47,7 +47,7 @@
   <!-- <Footer /> -->
 </div>
 
-<script>
+<script lang="typescript">
   import Nav from '../components/Nav.svelte';
   // TODO: Add footer and keep it at the bottom
   // import Footer from '../components/Footer.svelte';

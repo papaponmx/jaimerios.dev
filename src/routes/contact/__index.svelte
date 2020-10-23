@@ -42,7 +42,7 @@
   <button disabled="{!isFormValid}" type="submit">Send</button>
 </form>
 
-<script>
+<script lang="typescript">
   let email;
   let message;
   let name;

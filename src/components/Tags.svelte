@@ -34,6 +34,6 @@
   {/if}
 </div>
 
-<script>
+<script lang="typescript">
   export let tagsList;
 </script>

@@ -81,7 +81,7 @@
   </ul>
 </section>
 
-<script>
+<script lang="typescript">
   const socialNetworks = [
     {
       name: 'Dev',

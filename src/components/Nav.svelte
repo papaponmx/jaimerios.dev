@@ -86,7 +86,7 @@
   </ul>
 </nav>
 
-<script>
+<script lang="typescript">
   export let segment;
-  const isDev = process.env.NODE_ENV === 'development';
+  const isDev: boolean = process.env.NODE_ENV === 'development';
 </script>

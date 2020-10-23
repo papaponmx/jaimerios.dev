@@ -130,7 +130,7 @@
   }
 </script>
 
-<script>
+<script lang="typescript">
   import Tags from '../../components/Tags.svelte';
   export let post;
 </script>

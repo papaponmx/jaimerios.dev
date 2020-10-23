@@ -94,6 +94,6 @@
 </section>
 <SocialNetworks />
 
-<script>
+<script lang="typescript">
   import SocialNetworks from '../../components/SocialNetworks.svelte';
 </script>

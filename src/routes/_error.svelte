@@ -33,7 +33,7 @@
   <pre>{error.stack}</pre>
 {/if}
 
-<script>
+<script lang="typescript">
   export let status;
   export let error;
 
