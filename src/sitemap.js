@@ -4,7 +4,7 @@ const fs = require('fs');
 const fetch = require('node-fetch');
 
 const URL = 'https://dev.to/api/articles?username=papaponmx';
-const BASE_URL = process.env.VERCEL_URL;
+const BASE_URL = process.env.PUBLIC_VERCEL_URL;
 const pages = [''];
 
 fs.readdirSync('./src/routes').forEach(file => {
