@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   section.social-networks--wrapper {
     display: flex;
     justify-content: flex-start;
@@ -32,7 +32,7 @@
     flex-direction: column;
     gap: calc(var(--spacing-unit) * 1);
     justify-content: space-between;
-    color: var(--mirage-color);
+    color: $mirage-accent-color;
   }
 
   p {

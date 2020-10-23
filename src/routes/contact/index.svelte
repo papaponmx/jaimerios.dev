@@ -1,13 +1,16 @@
-<style>
+<style lang="scss">
+  @import '../../styles/_functions';
+  @import '../../styles/_variables';
+
   section.contact-page--wrapper {
     display: grid;
-    grid-template-columns: repeat(10, 10vw);
-    grid-template-rows: repeat(12, 10vh);
+    grid-template-columns: repeat(10, 10vw / rvr(1));
+    grid-template-rows: repeat(12, 10vh / rvr(1));
   }
 
   h1 {
-    color: var(--rose-color);
-    font-size: calc(var(--base-font-size) * 12);
+    color: $rose-color;
+    font-size: $base-font-size * 12;
     font-weight: 800;
     grid-column: 1 / 10;
     grid-row: 1 / 5;
@@ -25,12 +28,12 @@
   .cta--paragraph {
     grid-column: 1 / 10;
     grid-row: 3 / 5;
-    margin-top: 4rem;
+    margin-top: rvr(4);
     line-height: 1.5;
   }
 
   .email {
-    font-size: 4rem;
+    font-size: rvr(4);
     font-weight: 300;
     grid-column: 1 / 10;
     grid-row: 6 / 7;
@@ -39,12 +42,12 @@
 
   .cta--paragraph,
   .email {
-    margin-left: 2rem;
+    margin-left: rvr(2);
   }
 
   @media screen and (max-width: 30rem) {
     h1 {
-      font-size: 4.5rem;
+      font-size: rvr(4.5);
     }
 
     section.contact-page--wrapper {
@@ -60,18 +63,18 @@
 
     p,
     .email {
-      font-size: 1.5rem;
+      font-size: rvr(1.5);
     }
     .email {
-      color: var(--rose-color);
+      color: $rose-color;
       font-weight: 600;
-      font-size: 2rem;
+      font-size: rvr(2);
     }
 
     .cta--paragraph {
-      margin-top: -2rem;
-      font-size: 2rem;
-      line-height: 1.2;
+      margin-top: rvr(-2);
+      font-size: rvr(2);
+      line-height: rvr(1);
     }
   }
 </style>

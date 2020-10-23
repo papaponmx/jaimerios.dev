@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   svg {
     display: none;
     height: 50px;

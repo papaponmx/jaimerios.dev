@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   .tags--row {
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +16,7 @@
     margin-bottom: 0.5rem;
     font-weight: 200;
     font-size: 0.75rem;
-    color: var(--mirage-color);
+    color: $mirage-accent-color;
     border: 1px solid gray;
     padding: 1px 6px;
     border-radius: 25px;

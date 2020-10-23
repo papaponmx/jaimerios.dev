@@ -1,4 +1,6 @@
-<style>
+<style lang="scss">
+  @import '../styles/_variables';
+
   /**
   * Routes/index.svelte
   **/
@@ -10,7 +12,7 @@
   }
 
   h1 {
-    color: var(--pomegranate-color);
+    color: $pomegranate-color;
     font-weight: 800;
     font-size: 4.25rem;
     margin-bottom: 0.25rem;
@@ -24,7 +26,7 @@
   }
 
   h3 {
-    color: var(--mirage-color);
+    color: $mirage-accent-color;
     font-size: 3rem;
     line-height: 1.2;
     margin-top: 1rem;
@@ -63,7 +65,7 @@
   a {
     border-bottom: 1px solid var(--pomegranate-color);
     font-weight: 600;
-    color: var(--mirage-color);
+    color: $mirage-accent-color;
     text-decoration: none;
     padding: calc(var(--spacing-unit) / 2);
     margin-right: calc(var(--spacing-unit) / 2);

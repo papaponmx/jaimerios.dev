@@ -1,20 +1,21 @@
-<style>
+<style lang="scss">
+  @import '../../styles/_functions';
+  @import '../../styles/_variables';
+
   ul {
-    line-height: 1.5;
     list-style-type: none;
 
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     gap: 1rem;
-    padding: 2rem;
+    padding: rvr(1);
   }
-
   li {
     transition: all 0.3s ease;
-    color: var(--mirage-color);
-    background-color: var(--baby-powder-color);
-    padding: 1rem;
-    max-width: 400px;
+    color: $mirage-color;
+    background-color: $baby-powder-color;
+    padding: rvr(1);
+    max-width: 400px / rvr(1);
     border-radius: 20px;
   }
 
@@ -31,20 +32,20 @@
   }
 
   li:hover h2 {
-    color: var(--pomegranate-color);
+    color: $pomegranate-color;
   }
 
   h2 {
-    font-size: 1.5rem;
-    color: var(--mirage-accent-color);
+    font-size: rvr(1.2);
+    color: $mirage-accent-color;
     font-weight: 800;
   }
 
   time {
     color: black;
-    font-size: 1rem;
+    font-size: rvr(1);
     font-weight: 200;
-    margin-top: -1rem;
+    margin-top: rvr(-1);
   }
 
   .row {
@@ -52,26 +53,26 @@
   }
 
   .row span {
-    color: var(--mirage-color);
+    color: $mirage-accent-color;
   }
 
   @media screen and (max-width: 50em) {
     ul {
-      margin: 0 0 1em 0;
+      margin: 0 0 rvr(1) 0;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
     }
     h2 {
-      font-size: 1.75rem;
+      font-size: rvr(1.75);
     }
     ul {
       padding: 0;
     }
     li,
     li a {
-      max-width: calc(100% - 1rem);
+      max-width: calc(100% - rvr(1));
     }
 
     li {
@@ -86,16 +87,16 @@
         138deg,
         rgba(255, 255, 255, 1) 0%,
         rgba(255, 255, 255, 1) 91%,
-        var(--pomegranate-color--lighter) 91.1%,
-        var(--pomegranate-color--lighter) 100%
+        $pomegranate-color--lighter 91.1%,
+        $pomegranate-color--lighter 100%
       );
     }
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: rvr(5);
     font-weight: 800;
-    color: var(--mirage-accent-color);
+    color: $mirage-accent-color;
     line-height: 1;
     margin-bottom: 0.5rem;
   }

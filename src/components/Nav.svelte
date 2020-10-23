@@ -1,6 +1,7 @@
-<style>
+<style lang="scss">
+  @import '../styles/_variables';
   nav {
-    background-color: var(--baby-powder-color);
+    background-color: $baby-powder-color;
     /* border-bottom: 1px solid rgba(255, 62, 0, 0.1); */
     font-weight: 300;
     padding: 0 1em;

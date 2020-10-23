@@ -1,21 +1,24 @@
-<style>
+<style lang="scss">
+  @import '../styles/_variables';
+  @import '../styles/_functions';
+
   h1 {
-    color: var(--mirage-accent-color);
-    font-size: calc(var(--base-font-size) * 7);
+    color: $mirage-accent-color;
+    font-size: rvr(6);
     font-weight: 800;
   }
 
   section {
-    color: var(--mirage-color);
+    color: $mirage-accent-color;
     font-weight: 300;
   }
 
   hr {
-    background-color: var(--pomegranate-color--lighter);
+    background-color: $pomegranate-color--lighter;
     border: none;
     height: 5px;
     width: 30px;
-    margin-top: 18px;
+    margin-top: rvr(1.2);
     margin-left: 0;
     margin-right: 0;
   }
@@ -71,7 +74,7 @@
     width: 100%;
     background: linear-gradient(
       110deg,
-      var(--pomegranate-color--lighter),
+      $pomegranate-color--lighter,
       var(--pomegranate-color)
     );
     z-index: -1;
@@ -113,7 +116,7 @@
 
   @media screen and (max-width: 43.75rem) {
     h1 {
-      font-size: 5.5rem;
+      font-size: rvr(5);
       line-height: 0.8;
       margin-bottom: 7rem;
     }

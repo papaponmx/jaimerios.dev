@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   form {
     max-width: 22.5rem;
     display: flex;
@@ -13,7 +13,7 @@
     padding: 0.625rem;
     border: 1px solid var(--napa-color);
     height: calc(var(--spacing-unit) * 1.25);
-    border-bottom: 1px solid var(--mirage-color);
+    border-bottom: 1px solid $mirage-accent-color;
   }
 
   button {

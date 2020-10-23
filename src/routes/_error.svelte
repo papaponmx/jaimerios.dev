@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   h1,
   p {
     margin: 0 auto;
