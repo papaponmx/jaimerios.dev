@@ -6,7 +6,7 @@ import compression from 'compression';
 import polka from 'polka';
 import sirv from 'sirv';
 
-const { PORT, NODE_ENV, BLOG_API_URL } = process.env;
+const { PORT, NODE_ENV, BLOG_API_URL, VERCEL_URL } = process.env;
 const dev = NODE_ENV === 'development';
 
 polka() // You can also use Express
@@ -16,6 +16,7 @@ polka() // You can also use Express
     sapper.middleware({
       session: () => ({
         BLOG_API_URL,
+        VERCEL_URL,
       }),
     })
   )
