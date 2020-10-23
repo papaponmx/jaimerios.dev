@@ -91,12 +91,30 @@
       );
     }
   }
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--mirage-accent-color);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  @media screen and (min-width: 600px) {
+    h1 {
+      text-indent: 3rem;
+      font-size: 7rem;
+      margin-bottom: -1rem;
+    }
+  }
 </style>
 
 <svelte:head>
   <title>Blog</title>
 </svelte:head>
 
+<h1>Latest <wbr /> articles</h1>
+<HorizonalRule />
 <ul>
   {#each posts as post}
     <li class="posts-list">
@@ -124,6 +142,8 @@
 </script>
 
 <script>
+  import HorizonalRule from '../../components/HorizonalRule.svelte';
   import Tags from '../../components/Tags.svelte';
+
   export let posts;
 </script>
