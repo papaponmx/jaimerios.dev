@@ -50,6 +50,6 @@ fetch(URL, {
     const sitemap = render(pages, posts);
     fs.writeFile('./static/sitemap.xml', sitemap, err => {
       err && console.log('🛑 Error generating sitemap', err);
-      console.log('✅ Sitemap generated using', URL);
+      console.log('✅ Sitemap generated using', BASE_URL);
     });
   });
