@@ -55,8 +55,31 @@
   }
 
   a {
-    color: white;
+    display: inline-block;
+    position: relative;
     text-decoration: none;
+    color: inherit;
+    z-index: 1;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.07em;
+    height: 0.1em;
+    width: 100%;
+    background: linear-gradient(
+      110deg,
+      var(--pomegranate-color--lighter),
+      var(--pomegranate-color)
+    );
+    z-index: -1;
+    transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+  }
+
+  a:hover::after {
+    height: 0.25em;
   }
 
   @keyframes bounce {
@@ -90,6 +113,7 @@
 
   @media screen and (max-width: 43.75rem) {
     h1 {
+      font-size: 5.5rem;
       line-height: 0.8;
       margin-bottom: 7rem;
     }
