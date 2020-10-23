@@ -10,3 +10,5 @@ yarn-error.log
 .eslintcache
 
 cypress/videos/blog-post.spec.ts.mp4
+
+static/sitemap.xml
