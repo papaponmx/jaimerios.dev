@@ -13,11 +13,15 @@ const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
-const onwarn = (warning, onwarn) =>
-  (warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
-  (warning.code === 'CIRCULAR_DEPENDENCY' &&
-    /[/\\]@sapper[/\\]/.test(warning.message)) ||
-  onwarn(warning);
+const onwarn = (warning, onwarn) => {
+  if (warning.code === 'THIS_IS_UNDEFINED') return;
+  return (
+    (warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
+    (warning.code === 'CIRCULAR_DEPENDENCY' &&
+      /[/\\]@sapper[/\\]/.test(warning.message)) ||
+    onwarn(warning)
+  );
+};
 
 const preprocess = sveltePreprocess({
   sourceMap: dev,
@@ -29,7 +33,7 @@ const preprocess = sveltePreprocess({
     // We can use a path relative to the root because
     // svelte-preprocess automatically adds it to `includePaths`
     // if none is defined.
-    prependData: `@import 'src/styles/variables.scss';`,
+    prependData: `@import "src/styles/_variables.scss"; @import "src/styles/_functions.scss";`,
   },
 });
 
