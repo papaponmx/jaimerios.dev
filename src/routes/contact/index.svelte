@@ -64,7 +64,14 @@
     }
     .email {
       color: var(--rose-color);
-      font-weight: 700;
+      font-weight: 600;
+      font-size: 2rem;
+    }
+
+    .cta--paragraph {
+      margin-top: -2rem;
+      font-size: 2rem;
+      line-height: 1.2;
     }
   }
 </style>

@@ -1,7 +1,7 @@
 <style>
   /**
-   * Routes/index.svelte
-   *  **/
+  * Routes/index.svelte
+  **/
 
   main {
     padding: 1rem;
@@ -12,6 +12,7 @@
   h1 {
     color: var(--pomegranate-color);
     font-weight: 800;
+    font-size: 4.25rem;
     margin-bottom: 0.25rem;
   }
 
@@ -23,8 +24,11 @@
   }
 
   h3 {
-    font-weight: 400;
     color: var(--mirage-color);
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-top: 1rem;
+    font-weight: 300;
   }
 
   @media (min-width: 40rem) {
@@ -84,8 +88,8 @@
 
 <main>
   <header>
-    <h1>Hi, I am Jaime</h1>
-    <h3>Freelance <span>Front End</span> Developer</h3>
+    <h1>Hi, <wbr /> I am Jaime<wbr /></h1>
+    <h3>Freelance <wbr /> <span>Front End</span> <wbr /> Developer</h3>
   </header>
   <div class="cta-wrapper">
     <a href="blog">Blog</a>
