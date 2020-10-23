@@ -9,7 +9,7 @@ import sirv from 'sirv';
 const { PORT, NODE_ENV, BLOG_API_URL } = process.env;
 const dev = NODE_ENV === 'development';
 
-export default polka() // You can also use Express
+polka() // You can also use Express
   .use(
     compression({ threshold: 0 }),
     sirv('static', { dev }),
