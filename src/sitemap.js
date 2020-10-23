@@ -4,8 +4,7 @@ const fs = require('fs');
 const fetch = require('node-fetch');
 
 const URL = 'https://dev.to/api/articles?username=papaponmx';
-const BASE_URL =
-  process.env === 'development' ? 'localhost:3000' : process.env.VERCEL_URL;
+const BASE_URL = process.env === 'development' ? 'localhost:3000' : VERCEL_URL; // eslint-disable-line
 const pages = [''];
 
 fs.readdirSync('./src/routes').forEach(file => {
