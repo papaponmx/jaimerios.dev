@@ -1,6 +1,9 @@
 {
   // "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./"
+  },
   "types": ["cypress"],
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "cypress/**/*"],
   "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
 }
