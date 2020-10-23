@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const fs = require('fs');
 const fetch = require('node-fetch');
 
@@ -48,6 +50,6 @@ fetch(URL, {
     const sitemap = render(pages, posts);
     fs.writeFile('./static/sitemap.xml', sitemap, err => {
       err && console.log('🛑 Error generating sitemap', err);
-      console.log('✅ Sitemap generated successfully');
+      console.log('✅ Sitemap generated using', URL);
     });
   });
