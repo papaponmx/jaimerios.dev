@@ -4,6 +4,6 @@
     "baseUrl": "./"
   },
   "types": ["cypress"],
-  "include": ["src/**/*", "cypress/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
 }
