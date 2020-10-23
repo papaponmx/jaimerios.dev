@@ -2,7 +2,7 @@
   .tags--row {
     display: flex;
     flex-wrap: wrap;
-    max-width: (100vw - 1rem);
+    max-width: calc(100vw - 1rem);
   }
 
   @media screen and (max-width: 400px) {
