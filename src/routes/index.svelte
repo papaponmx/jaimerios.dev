@@ -29,7 +29,6 @@
   h3 {
     color: $mirage-accent-color;
     font-size: 2.75rem;
-    // padding-top: rvr(0.5);
     font-weight: 300;
     line-height: 1.25;
   }
@@ -69,11 +68,11 @@
     font-weight: 600;
     color: $mirage-accent-color;
     text-decoration: none;
-    padding: rvr(1) rvr(0.5) rvr(1) 0;
-    margin-bottom: rvr(1.5);
+    padding: 1rem 0.5rem 1rem 0;
     margin-right: $spacing-unit / 2;
+    margin-bottom: rvr(1.25);
     min-width: 100%;
-    line-height: rvr(0.5);
+    line-height: 0.5rem;
   }
 
   a:hover,
