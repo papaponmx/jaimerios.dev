@@ -1,27 +1,27 @@
 <style lang="scss">
   @import '../styles/_variables';
+  @import '../styles/_functions';
   nav {
-    background-color: $baby-powder-color;
-    /* border-bottom: 1px solid rgba(255, 62, 0, 0.1); */
     font-weight: 300;
-    padding: 0 1em;
+    font-size: 1rem;
+    height: rvr(1.5);
   }
 
   ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
   }
 
   /* clearfix */
   ul::after {
     content: '';
     display: block;
-    clear: both;
   }
 
   li {
     display: block;
-    float: left;
   }
 
   [aria-current] {
@@ -31,17 +31,17 @@
 
   [aria-current]::after {
     background-color: rgb(255, 62, 0);
-    bottom: -0.0625rem;
+    bottom: rvr(-0.0625);
     content: '';
     display: block;
-    height: 0.125rem;
+    height: rvr(0.125);
     position: absolute;
-    width: calc(100% - 1em);
+    width: (100% / rvr(1)) - rvr(1);
   }
 
   a {
     text-decoration: none;
-    padding: 1em 0.5em;
+    padding: 0 rvr(0.5);
     display: block;
   }
 </style>
