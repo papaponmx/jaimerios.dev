@@ -1,4 +1,5 @@
 <style lang="scss">
+  @import '../../styles/_variables';
   /*
 		By default, CSS is locally scoped to the component,
 		and any unused styles are dead-code-eliminated.
@@ -8,12 +9,11 @@
 		all elements inside .content
 	*/
   .content :global(h2) {
-    font-size: 1.4em;
+    font-size: rvr(1);
     font-weight: 500;
   }
 
   .content :global(pre) {
-    background-color: #f9f9f9;
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
     padding: 0.5em;
     border-radius: 2px;
@@ -25,16 +25,12 @@
     padding: 0;
   }
 
-  .content :global(ul) {
-    line-height: 1.5;
-  }
-
   .content :global(li) {
-    margin: 0 0 0.5em 0;
+    margin: 0 0 rvr(0.5) 0;
   }
 
   :global(.content) {
-    font-size: 1.375rem;
+    font-size: rvr(1);
     font-weight: 300;
     max-width: 100%;
   }
@@ -48,7 +44,7 @@
     background: #ededed;
     font-style: italic;
     color: #555555;
-    padding: 1.2em 1.25rem 1.2em 1.875rem;
+    padding: rvr(1.2) 1.25rem rvr(1.2) 1.875rem;
     border-left: 6px solid var(--mirage-accent-color);
   }
 
@@ -57,19 +53,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100vw;
-    padding: 0.5rem;
-    width: calc(100% - 12.5rem);
+    max-width: 100vw / rvr(1);
+    padding: rvr(0.5);
+    width: calc(100% - rvr(12.5));
   }
 
   .content {
     align-self: center;
-    max-width: 35rem;
+    max-width: rvr(30);
   }
 
   h1 {
     color: var(--mirage-accent-color);
-    font-size: 4.5rem;
+    font-size: rvr(4.5);
     font-weight: 800;
     margin-bottom: 0.2rem;
   }
@@ -77,16 +73,16 @@
   header {
     max-width: 100%;
     text-align: left;
-    width: 35rem;
+    width: rvr(35);
   }
   @media screen and (max-width: 650px) {
     article {
       min-width: calc(100vw - 2rem);
-      margin-left: -1rem;
+      margin-left: rvr(-1);
     }
     header h1 {
-      font-size: 3.25rem;
-      width: calc(100vw - 2.75rem);
+      font-size: rvr(3);
+      width: calc(100vw - rvr(2.75));
     }
 
     .content {
@@ -96,6 +92,10 @@
       margin-left: -1rem;
       max-width: calc(100% - 1.5rem);
     }
+  }
+
+  :global(p) {
+    margin-top: rvr(0.75);
   }
 </style>
 

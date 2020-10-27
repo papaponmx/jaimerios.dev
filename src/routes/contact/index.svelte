@@ -10,7 +10,7 @@
 
   h1 {
     color: $rose-color;
-    font-size: $base-font-size * 12;
+    font-size: rvr(3);
     font-weight: 800;
     grid-column: 1 / 10;
     grid-row: 1 / 5;
@@ -29,7 +29,6 @@
     grid-column: 1 / 10;
     grid-row: 3 / 5;
     margin-top: rvr(4);
-    line-height: 1.5;
   }
 
   .email {
@@ -47,7 +46,7 @@
 
   @media screen and (max-width: 30rem) {
     h1 {
-      font-size: rvr(4.5);
+      font-size: rvr(2);
     }
 
     section.contact-page--wrapper {
@@ -74,7 +73,6 @@
     .cta--paragraph {
       margin-top: rvr(-2);
       font-size: rvr(2);
-      line-height: rvr(1);
     }
   }
 </style>

@@ -1,4 +1,6 @@
 <style lang="scss">
+  @import '../styles/_functions';
+  @import '../styles/_variables';
   section.social-networks--wrapper {
     display: flex;
     justify-content: flex-start;
@@ -51,7 +53,7 @@
     }
 
     p {
-      font-size: 1.25rem;
+      font-size: rvr(1);
       font-weight: 300;
     }
   }

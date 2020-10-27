@@ -17,8 +17,9 @@
     background-color: $pomegranate-color--lighter;
     border: none;
     height: 5px;
-    width: 30px;
-    margin-top: rvr(1.2);
+    width: 300px;
+    position: absolute;
+    margin-bottom: rvr(1.2);
     margin-left: 0;
     margin-right: 0;
   }
@@ -32,10 +33,10 @@
   }
 
   .subheading--row span {
-    text-indent: 10px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-size: 28px;
+    font-size: rvr(1);
+    padding-top: rvr(1);
     color: #343434;
     max-width: calc(100% - 2rem);
   }
@@ -46,7 +47,6 @@
     max-width: 550px;
     font-size: 1.25rem;
     letter-spacing: 0.1px;
-    line-height: 1.2;
     color: #333333;
     font-weight: 300;
   }
@@ -117,7 +117,6 @@
   @media screen and (max-width: 43.75rem) {
     h1 {
       font-size: rvr(5);
-      line-height: 0.8;
       margin-bottom: 7rem;
     }
   }

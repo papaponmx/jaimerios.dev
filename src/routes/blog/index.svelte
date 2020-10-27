@@ -15,7 +15,7 @@
     color: $mirage-color;
     background-color: $baby-powder-color;
     padding: rvr(1);
-    max-width: 400px / rvr(1);
+    max-width: rvr(25);
     border-radius: 20px;
   }
 
@@ -65,7 +65,7 @@
       align-items: flex-start;
     }
     h2 {
-      font-size: rvr(1.75);
+      font-size: rvr(1.5);
     }
     ul {
       padding: 0;
@@ -97,7 +97,6 @@
     font-size: rvr(5);
     font-weight: 800;
     color: $mirage-accent-color;
-    line-height: 1;
     margin-bottom: 0.5rem;
   }
 
