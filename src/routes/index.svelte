@@ -26,11 +26,15 @@
     align-items: flex-start;
   }
 
+  h1 {
+    margin-bottom: 3rem;
+  }
   h3 {
     color: $mirage-accent-color;
     font-size: 2.75rem;
     font-weight: 300;
     line-height: 1.25;
+    margin-top: 0;
   }
 
   @media (min-width: 40rem) {
