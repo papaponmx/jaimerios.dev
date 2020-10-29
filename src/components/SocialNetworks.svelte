@@ -7,11 +7,7 @@
     align-items: flex-start;
     flex-direction: column;
     max-width: 500px;
-    margin-left: 1.5rem;
     padding-bottom: 4rem;
-
-    grid-column: 1 / 10;
-    grid-row-start: 10;
   }
 
   img {
@@ -32,29 +28,35 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: calc(var(--spacing-unit) * 1);
     justify-content: space-between;
     color: $mirage-accent-color;
   }
 
   p {
-    font-size: 1.75rem;
+    padding-top: 1.5rem;
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.75rem;
   }
 
   @media screen and (max-width: 30rem) {
     section.social-networks--wrapper {
       margin: 0;
     }
+
     ul {
       display: grid;
-      grid-template-columns: repeat(3, 2.5rem);
+      grid-template-columns: repeat(3, 2.25rem);
       grid-template-rows: repeat(2, 3rem);
       gap: 1rem;
     }
 
     p {
-      font-size: rvr(1);
+      line-height: 1.75;
+      font-size: 1rem;
       font-weight: 300;
+      padding-top: 0.75rem;
     }
   }
 
