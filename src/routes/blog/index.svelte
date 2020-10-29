@@ -72,6 +72,7 @@
     }
     h2 {
       font-size: 1.75rem;
+      margin-bottom: 0.5;
     }
     ul {
       padding: 0;
@@ -83,6 +84,12 @@
 
     li {
       box-shadow: none;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    time {
+      margin-bottom: 0.75rem;
     }
   }
 
@@ -110,7 +117,6 @@
     h1 {
       font-size: 7rem;
       margin-bottom: -1rem;
-      text-indent: 3rem;
     }
   }
 </style>

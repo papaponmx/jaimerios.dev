@@ -6,16 +6,8 @@
     max-width: calc(100vw - 1rem);
   }
 
-  @media screen and (max-width: 400px) {
-    .tags--row {
-      width: 300px;
-    }
-  }
-
   .tag {
     margin-right: 0.75rem;
-    // padding-top: 1.5rem;
-    // margin-bottom: 0.5rem;
     font-weight: 200;
     font-size: 0.75rem;
     color: $mirage-accent-color;
@@ -25,6 +17,18 @@
   }
   .tag:hover {
     cursor: default;
+  }
+
+  @media screen and (max-width: 400px) {
+    .tags--row {
+      width: 300px;
+      max-width: calc(100vw - 2rem);
+    }
+
+    .tag {
+      margin-bottom: 1rem;
+      padding: 0.25rem 0.5rem;
+    }
   }
 </style>
 
