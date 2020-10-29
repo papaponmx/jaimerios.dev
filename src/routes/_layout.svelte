@@ -33,10 +33,6 @@
     margin-bottom: 1rem;
   }
 
-  :global(h1, h2, h3, h4, h5) {
-    margin: 3rem 0 1.38rem;
-  }
-
   :global(h1) {
     margin-top: 0;
     font-size: 7.594rem;
@@ -60,6 +56,12 @@
 
   :global(small, .text_small) {
     font-size: 0.667rem;
+  }
+
+  :global(body) {
+    background-image: url('https://basehold.it/i/14/333333'); /* with Hex colour */
+    background-size: 4px 14px;
+    background-repeat: repeat;
   }
 </style>
 

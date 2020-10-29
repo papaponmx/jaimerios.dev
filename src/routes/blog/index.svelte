@@ -8,15 +8,15 @@
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     gap: 1rem;
-    padding: rvr(1);
+    padding: 0 3rem;
+    margin-top: -1.75rem;
   }
   li {
-    transition: all 0.3s ease;
-    color: $mirage-color;
-    background-color: $baby-powder-color;
-    padding: rvr(1);
-    max-width: rvr(25);
     border-radius: 20px;
+    color: $mirage-color;
+    max-width: rvr(25);
+    padding: rvr(1);
+    transition: all 0.3s ease;
   }
 
   li:hover {
@@ -36,16 +36,17 @@
   }
 
   h2 {
-    font-size: rvr(1.2);
     color: $mirage-accent-color;
+    font-size: rvr(1.2);
     font-weight: 800;
   }
 
   time {
     color: black;
-    font-size: rvr(1);
+    display: block;
+    font-size: 1.25rem;
     font-weight: 200;
-    margin-top: rvr(-1);
+    margin-bottom: 0.75rem;
   }
 
   .row {
@@ -57,22 +58,27 @@
   }
 
   @media screen and (max-width: 50em) {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.25;
+    }
+
     ul {
-      margin: 0 0 rvr(1) 0;
+      margin: 0 0 1rem 0;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
     }
     h2 {
-      font-size: rvr(1.5);
+      font-size: 1.75rem;
     }
     ul {
       padding: 0;
     }
     li,
     li a {
-      max-width: calc(100% - rvr(1));
+      max-width: calc(100% - 2rem);
     }
 
     li {
@@ -94,17 +100,17 @@
   }
 
   h1 {
-    font-size: rvr(5);
-    font-weight: 800;
     color: $mirage-accent-color;
+    // font-size: rvr(5);
+    font-weight: 800;
     margin-bottom: 0.5rem;
   }
 
   @media screen and (min-width: 600px) {
     h1 {
-      text-indent: 3rem;
       font-size: 7rem;
       margin-bottom: -1rem;
+      text-indent: 3rem;
     }
   }
 </style>

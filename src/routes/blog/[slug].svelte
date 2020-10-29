@@ -13,6 +13,10 @@
     font-weight: 500;
   }
 
+  .content :global(p) {
+    margin-top: 0;
+  }
+
   .content :global(pre) {
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
     padding: 0.5em;
