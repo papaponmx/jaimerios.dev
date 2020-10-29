@@ -6,6 +6,7 @@
     color: $mirage-accent-color;
     font-size: rvr(6);
     font-weight: 800;
+    margin-bottom: 1rem;
   }
 
   section {
@@ -35,8 +36,8 @@
   .subheading--row span {
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-size: rvr(1);
-    padding-top: rvr(1);
+    font-size: 1.5rem;
+    padding-top: 2.25rem;
     color: #343434;
     max-width: calc(100% - 2rem);
   }
@@ -44,11 +45,13 @@
   p,
   ul,
   li {
-    max-width: 550px;
-    font-size: 1.25rem;
-    letter-spacing: 0.1px;
     color: #333333;
+    font-size: 1.25rem;
     font-weight: 300;
+    letter-spacing: 0.1px;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    max-width: 550px;
   }
 
   section {
@@ -109,9 +112,10 @@
   }
 
   article {
+    padding-top: 3rem;
     text-align: left;
     align-self: center;
-    grid-area: 5 / 1/ 3 / 5;
+    grid-area: 5 / 1 / 3 / 5;
   }
 
   @media screen and (max-width: 43.75rem) {
