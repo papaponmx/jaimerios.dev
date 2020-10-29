@@ -5,6 +5,7 @@
     font-weight: 300;
     font-size: 1rem;
     height: rvr(1.5);
+    padding-top: 0.5rem 1rem 0;
   }
 
   ul {
@@ -41,8 +42,8 @@
 
   a {
     text-decoration: none;
-    padding: 0 rvr(0.5);
     display: block;
+    margin-right: 1rem;
   }
 </style>
 
