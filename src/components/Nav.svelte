@@ -5,7 +5,7 @@
     font-weight: 300;
     font-size: 1rem;
     height: rvr(1.5);
-    padding-top: 0.5rem 1rem 0;
+    padding: 0.5rem 1rem 0;
   }
 
   ul {

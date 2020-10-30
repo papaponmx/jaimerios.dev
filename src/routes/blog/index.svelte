@@ -9,7 +9,6 @@
     grid-template-columns: repeat(4, 2fr);
     gap: 1rem;
     padding: 0 3rem;
-    margin-top: -1.75rem;
   }
   li {
     border-radius: 20px;

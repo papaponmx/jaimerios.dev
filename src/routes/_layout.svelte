@@ -59,7 +59,8 @@
   }
 
   :global(body) {
-    background-image: url('https://basehold.it/i/14/333333'); /* with Hex colour */
+    margin: 0;
+    background-image: url('https://basehold.it/i/14/bcbcbc'); /* with Hex colour */
     background-size: 4px 14px;
     background-repeat: repeat;
   }

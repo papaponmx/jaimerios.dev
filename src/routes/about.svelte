@@ -120,8 +120,13 @@
 
   @media screen and (max-width: 43.75rem) {
     h1 {
-      font-size: rvr(5);
+      font-size: 6rem;
+      line-height: 1;
       margin-bottom: 7rem;
+    }
+
+    .subheading--row span {
+      font-size: 1.75rem;
     }
   }
 </style>
@@ -164,7 +169,7 @@
         job in tech.
       </li>
       <li>
-        Docummenting my journey in <a href="/blog">my blog</a> and sharing with the
+        Documenting my journey in <a href="/blog">my blog</a> and sharing with the
         community so others can avoid some of the problems I have faced and grow
       </li>
     </ul>

@@ -27,7 +27,7 @@
   }
 
   h1 {
-    margin-bottom: 3rem;
+    margin-bottom: -0.5rem;
   }
   h3 {
     color: $mirage-accent-color;
@@ -43,8 +43,8 @@
     }
 
     h1 {
-      font-size: 5.75rem;
-      line-height: 1.25;
+      font-size: 6rem;
+      line-height: 1.2;
     }
     h3 {
       font-weight: 200;
@@ -68,22 +68,22 @@
   }
 
   a {
-    border-bottom: 1px solid $pomegranate-color;
+    // border-bottom: 1px solid $pomegranate-color;
     font-weight: 600;
     color: $mirage-accent-color;
     text-decoration: none;
-    padding: 1rem 0.5rem 1rem 0;
+    padding: 1rem 1.5rem;
     margin-right: $spacing-unit / 2;
-    margin-bottom: rvr(1.25);
+    margin-bottom: 1.25rem;
     min-width: 100%;
-    line-height: 0.5rem;
+    line-height: 1.25;
   }
 
   a:hover,
   a:focus {
     box-shadow: inset 0 0 0 3rem $pomegranate-color;
     color: white;
-    transition-duration: 250ms;
+    transition-duration: 300ms;
   }
 </style>
 
