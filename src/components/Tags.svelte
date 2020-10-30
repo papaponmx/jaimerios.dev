@@ -13,7 +13,7 @@
     font-size: 0.75rem;
     line-height: 1.25;
     margin-bottom: 0.6rem;
-    color: $mirage-accent-color;
+    color: $mirage-color;
     border: 1px solid gray;
     padding: 1px 6px;
     border-radius: 25px;
