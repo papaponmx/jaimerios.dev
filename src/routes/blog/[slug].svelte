@@ -40,9 +40,10 @@
   }
 
   .content :global(hr) {
+    border: none;
+    border-bottom: 0.25rem solid #cccccc;
     margin: 0 0 1rem 0;
     padding: 1rem 0 0 0;
-    border-bottom: 0.25rem solid red;
   }
 
   .content :global(pre) :global(code) {
