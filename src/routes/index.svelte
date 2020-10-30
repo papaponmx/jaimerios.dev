@@ -29,7 +29,7 @@
   h1 {
     margin-bottom: -0.5rem;
   }
-  h3 {
+  h2 {
     color: $mirage-accent-color;
     font-size: 2.75rem;
     font-weight: 300;
@@ -46,7 +46,7 @@
       font-size: 6rem;
       line-height: 1.2;
     }
-    h3 {
+    h2 {
       font-weight: 200;
       font-size: 2.75rem;
       margin-top: 0;
@@ -98,7 +98,7 @@
 <main>
   <header>
     <h1>Hi, <wbr /> I am Jaime<wbr /></h1>
-    <h3>Freelance <wbr /> <span>Front End</span> <wbr /> Developer</h3>
+    <h2>Freelance <wbr /> <span>Front End</span> <wbr /> Developer</h2>
   </header>
   <div class="cta-wrapper">
     <a href="blog">Blog</a>
