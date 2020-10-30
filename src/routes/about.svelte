@@ -6,6 +6,7 @@
     color: $mirage-accent-color;
     font-size: rvr(6);
     font-weight: 800;
+    margin-bottom: 1rem;
   }
 
   section {
@@ -17,8 +18,9 @@
     background-color: $pomegranate-color--lighter;
     border: none;
     height: 5px;
-    width: 30px;
-    margin-top: rvr(1.2);
+    width: 300px;
+    position: absolute;
+    margin-bottom: rvr(1.2);
     margin-left: 0;
     margin-right: 0;
   }
@@ -32,10 +34,10 @@
   }
 
   .subheading--row span {
-    text-indent: 10px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-size: 28px;
+    font-size: 1.5rem;
+    padding-top: 2.25rem;
     color: #343434;
     max-width: calc(100% - 2rem);
   }
@@ -43,12 +45,13 @@
   p,
   ul,
   li {
-    max-width: 550px;
-    font-size: 1.25rem;
-    letter-spacing: 0.1px;
-    line-height: 1.2;
     color: #333333;
+    font-size: 1.25rem;
     font-weight: 300;
+    letter-spacing: 0.1px;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    max-width: 550px;
   }
 
   section {
@@ -109,16 +112,21 @@
   }
 
   article {
+    padding-top: 3rem;
     text-align: left;
     align-self: center;
-    grid-area: 5 / 1/ 3 / 5;
+    grid-area: 5 / 1 / 3 / 5;
   }
 
   @media screen and (max-width: 43.75rem) {
     h1 {
-      font-size: rvr(5);
-      line-height: 0.8;
+      font-size: 6rem;
+      line-height: 1;
       margin-bottom: 7rem;
+    }
+
+    .subheading--row span {
+      font-size: 1.75rem;
     }
   }
 </style>
@@ -161,7 +169,7 @@
         job in tech.
       </li>
       <li>
-        Docummenting my journey in <a href="/blog">my blog</a> and sharing with the
+        Documenting my journey in <a href="/blog">my blog</a> and sharing with the
         community so others can avoid some of the problems I have faced and grow
       </li>
     </ul>

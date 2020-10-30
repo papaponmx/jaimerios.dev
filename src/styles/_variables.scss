@@ -1,3 +1,5 @@
+@import "./functions";
+
 
   $baseline: 1.4;
   /* Color Pallette  */
@@ -14,7 +16,7 @@
   $base-font-size: 1rem;
   $footer-height: 4.6875rem;
   $navigation-height: 12.5rem;
-  $main-height: calc(100vh - $footer-height * 2.25);
+  $main-height: 100vh / rvr(1);
   $spacing-unit: 1.125rem;
 
   // line-height: $baseline;

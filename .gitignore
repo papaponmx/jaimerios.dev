@@ -12,3 +12,5 @@ yarn-error.log
 cypress/videos/blog-post.spec.ts.mp4
 
 static/sitemap.xml
+
+cypress/videos/sitemap.spec.ts.mp4

@@ -1,5 +1,6 @@
 <style lang="scss">
   @import '../styles/_variables';
+  @import '../styles/_functions';
 
   /**
   * Routes/index.svelte
@@ -14,8 +15,8 @@
   h1 {
     color: $pomegranate-color;
     font-weight: 800;
-    font-size: 4.25rem;
-    margin-bottom: 0.25rem;
+    font-size: 4.75rem;
+    line-height: 1;
   }
 
   header {
@@ -25,12 +26,15 @@
     align-items: flex-start;
   }
 
+  h1 {
+    margin-bottom: -0.5rem;
+  }
   h3 {
     color: $mirage-accent-color;
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-top: 1rem;
+    font-size: 2.75rem;
     font-weight: 300;
+    line-height: 1.25;
+    margin-top: 0;
   }
 
   @media (min-width: 40rem) {
@@ -39,44 +43,47 @@
     }
 
     h1 {
-      font-size: calc(var(--base-font-size) * 8);
+      font-size: 6rem;
+      line-height: 1.2;
     }
     h3 {
       font-weight: 200;
-      font-size: calc(var(--base-font-size) * 3);
+      font-size: 2.75rem;
+      margin-top: 0;
     }
 
     span {
       font-weight: 500;
-      /* filter: brightness(310%); */
-      color: var(--mirage-color-color);
+      color: $mirage-color;
     }
   }
 
   .cta-wrapper {
-    margin-top: calc(var(--spacing-unit) * 1);
+    margin-top: $spacing-unit * 1;
     display: flex;
     flex-direction: column;
     max-width: 150px;
-    font-size: calc(var(--spacing-unit) * 2);
+    font-size: $spacing-unit * 2;
     font-weight: 200;
   }
 
   a {
-    border-bottom: 1px solid var(--pomegranate-color);
+    // border-bottom: 1px solid $pomegranate-color;
     font-weight: 600;
     color: $mirage-accent-color;
     text-decoration: none;
-    padding: calc(var(--spacing-unit) / 2);
-    margin-right: calc(var(--spacing-unit) / 2);
+    padding: 1rem 1.5rem;
+    margin-right: $spacing-unit / 2;
+    margin-bottom: 1.25rem;
     min-width: 100%;
+    line-height: 1.25;
   }
 
   a:hover,
   a:focus {
-    box-shadow: inset 0 0 0 3rem var(--pomegranate-color);
-    color: #ffffff;
-    transition-duration: 250ms;
+    box-shadow: inset 0 0 0 3rem $pomegranate-color;
+    color: white;
+    transition-duration: 300ms;
   }
 </style>
 
