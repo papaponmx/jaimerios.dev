@@ -142,11 +142,11 @@
   {/each}
 </ul>
 
-<script context="module">
+<script context="module" lang="typescript">
   export function preload({ _params, _query }, session) {
     return this.fetch('/blog.json')
       .then(r => r.json())
-      .then(posts => {
+      .then((posts: Array<BlogPostPreview>) => {
         return { posts };
       })
       .catch(err => 'Error is ' + JSON.stringify(null, 2, err));
@@ -154,8 +154,9 @@
 </script>
 
 <script lang="typescript">
+  import type { BlogPostPreview } from '../../models/blog-posts-preview.interface';
   import HorizonalRule from '../../components/HorizonalRule.svelte';
   import Tags from '../../components/Tags.svelte';
 
-  export let posts;
+  export let posts: Array<BlogPostPreview>;
 </script>

@@ -4,6 +4,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: #333;
 
+  margin: 0;
+
   /**
    * Vertical rhythm grid.
    **/
