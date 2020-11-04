@@ -3,7 +3,7 @@
 The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
 
 ## Description
-This project includes code for jaimerios.dev. This website intended to:
+This project includes code for [jaimerios.io](https://jaimerios.io) This website intended to:
 
 - Share information about me and the services I provide.
 - Showcase my work.
@@ -32,12 +32,13 @@ Tell people where they can go to for help. It can be any combination of an issue
 - [x] Create sitemap.
 - [x] Create sitemap e2e test.
 - [x] Install Typescript.
-- [ ] Add codepen examples.
-- [ ] Add portfolio.
-- [ ] Add animations.
+- [x] Improve lighthouse score.
+- [x] Add link styling.
+- [x] Test for a11y.
 - [ ] Create a services page.
-- [ ] Improve lighthouse score.
-- [ ] Test for a11y.
+- [ ] Add codepen examples.
+- [ ] Add animations.
+- [ ] Add portfolio.
 - [ ] Resolve TODO comments in the code from this code.
 - [ ] Create a blog post and launch website.
 <!-- [] IDEA: Add this background effect: https://codepen.io/Johnm__/pen/qZqgGJ -->

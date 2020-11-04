@@ -61,6 +61,27 @@
   :global(body) {
     margin: 0;
   }
+  :global(a) {
+    box-shadow: inset 0 -1.5px 0 $mirage-accent-color;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $celeste-color;
+      border-bottom: 1px solid $celeste-color;
+      box-shadow: inset 0 -1.5px 0 $celeste-color;
+    }
+
+    &:active,
+    &:focus {
+      outline-color: $pomegranate-color--lighter;
+      outline-style: dotted;
+      outline-width: thick;
+    }
+  }
 </style>
 
 <div class="wrapper">

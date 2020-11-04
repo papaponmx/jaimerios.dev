@@ -23,6 +23,8 @@
   }
 
   li a {
+    border-bottom: none;
+    box-shadow: none;
     text-decoration: none;
     display: flex;
     flex-direction: column;
