@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+    <url><loc>https://jaimerios.io/</loc><priority>0.85</priority></url>
+  
+
+    <url><loc>https://jaimerios.io/about</loc><priority>0.85</priority></url>
+  
+
+    <url><loc>https://jaimerios.io/blog</loc><priority>0.85</priority></url>
+  
+
+    <url><loc>https://jaimerios.io/contact</loc><priority>0.85</priority></url>
+  
+
+    <url><loc>https://jaimerios.io/portfolio</loc><priority>0.85</priority></url>
+  
+      
+    <url>
+      <loc>https://jaimerios.io/blog/array-reduce-for-newbies-438h</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/as-a-backend-dev-what-is-your-biggest-struggle-while-learning-front-end-technologies-1b46</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/solving-my-own-problem-with-software-3378</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/progressive-enhancement-respecting-web-browser-preferences-in-a-post-es6-world-p4o</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/accessible-fonts-for-people-in-a-hurry-387</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/a-hitchhikers-guide-to-web-images-on-2019-203j</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/if-you-could-only-achieve-one-thing-as-a-programmer-during-the-next-year-what-would-it-be--1m9h</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/flipping-the-coin-should-developers-design-26ie</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/front-end-development-automation-part-4-3gjd</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/my-impressions-about-mentoring---5bp2</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/a-gentle-explanation-of-github-webhooks-----d3e</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/what-are-the-key-metrics-that-you-look-for-web-app-optimization--4n1h</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/my-impressions-after-trying-to-use-es-modules-in-2018---3mga</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/front-end-development-automation-with-puppeteer-part-3-3pl6</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/unit-testing-hoc-connected-components-2d8h</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/in-praise-of-accessibility-outline-3m78</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/what-are-the-amazing-things-you-do-with-the-terminal-2bga</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/a-quick-explanation-to-redux-observable--16b5</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/front-end-automation-with-puppeteer-part-2-2pmb</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/front-end-development-automation-with-puppeteer-part-1-2k9n</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/what-i-learned-trying-to-connect-firebase-to-an-app-with-react-and-redux-4p0e</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/filtering-an-array-on-es6-56o1</loc>
+      <priority>0.69</priority>
+    </url>
+  
+
+    <url>
+      <loc>https://jaimerios.io/blog/looping-over-object-properties-with-ngfor-in-angular-26lm</loc>
+      <priority>0.69</priority>
+    </url>
+  
+</urlset>

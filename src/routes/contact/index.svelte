@@ -1,102 +1,77 @@
-<style>
+<style lang="scss">
+  @import '../../styles/_functions';
+  @import '../../styles/_variables';
+
   h1 {
-    color: var(--pomegranate-color);
-    font-size: calc(var(--base-font-size) * 3);
-    font-weight: 200;
-    max-width: 250px;
+    color: $rose-color;
+    font-size: 5.25rem;
+    margin-bottom: 0;
+    font-weight: 800;
   }
 
-  section {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    max-width: 500px;
-  }
-  img {
-    width: calc(var(--spacing-unit) * 2);
+  p {
+    margin: 0;
+    font-weight: 300;
+    max-width: 31.25rem;
   }
 
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding-left: 0;
-    list-style: none;
-    max-width: 500px;
-    min-width: 100%;
+  .cta--paragraph {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
   }
-  li a {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--spacing-unit) * 1);
-    justify-content: space-between;
-    color: var(--mirage-color);
+  p:not(.cta--paragraph) {
+    margin-left: 5rem;
   }
 
-  li:hover span,
-  li:focus span {
-    display: block;
+  .email {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 1rem;
   }
 
-  /* TODO: Animate hover states */
-  span {
-    display: none;
+  @media screen and (max-width: 30rem) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    section.contact-page--wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cta--paragraph {
+      font-size: 1rem;
+      line-height: 1.75;
+      padding-top: 0.25rem;
+    }
+
+    .email {
+      color: $rose-color;
+      font-weight: 600;
+      padding-top: 0.25rem;
+    }
   }
 </style>
 
 <svelte:head>
   <title>Contact</title>
 </svelte:head>
-<h1>Contact me</h1>
-<section>
-  <h3>You find me online on the following social networks</h3>
-  <ul>
-    {#each socialNetworks as socialNetwork}
-      <li>
-        <a
-          href="{socialNetwork.profileUrl}"
-          target="_blank"
-          title="{`Go to my ${socialNetwork.name}'s profile`}"
-          rel="noreferrer nofollow"
-        >
-          <img
-            alt="{`${socialNetwork.name} brand logo`}"
-            role="figure"
-            src="{`images/${socialNetwork.name.toLowerCase()}.svg`}"
-          />
-          <span>{socialNetwork.name}</span>
-        </a>
-      </li>
-    {/each}
-  </ul>
-</section>
 
-<script>
-  const socialNetworks = [
-    {
-      name: 'Dev',
-      profileUrl: 'https://dev.to/papaponmx',
-    },
-    {
-      name: 'Github',
-      profileUrl: 'http://github.com/papaponmx',
-    },
-    {
-      name: 'Dribbble',
-      profileUrl: 'http://dribbble.com/papaponmx',
-    },
-    {
-      name: 'Twitter',
-      profileUrl: 'https://twitter.com/papaponmx',
-    },
-    {
-      name: 'LinkedIn',
-      profileUrl: 'https://www.linkedin.com/in/papaponmx/',
-    },
-    {
-      name: 'Reddit',
-      profileUrl: 'https://www.reddit.com/user/papaponmx',
-    },
-  ];
+<section class="contact-page--wrapper">
+  <h1>Contact</h1>
+
+  <p class="cta--paragraph">
+    For project ideas, speaking or just to say hello:
+  </p>
+
+  <a
+    href="mailto:jaime.rios@hey.com?subject=Mail from jaimerios.io"
+    class="email"
+  >jaime.rios@hey.com</a>
+</section>
+<SocialNetworks />
+
+<script lang="typescript">
+  import SocialNetworks from '../../components/SocialNetworks.svelte';
 </script>

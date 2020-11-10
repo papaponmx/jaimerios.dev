@@ -1,0 +1,15 @@
+:root {
+  --baseline: 1.5;
+  line-height: var(--baseline)
+}
+
+// rvr stands for responsive vertical rhythm
+@function rvr($multiple) {
+  @return calc(var(--baseline) * #{$multiple} * 1rem);
+}
+
+@mixin gridBackground {
+      background-image: url('https://basehold.it/i/14/bcbcbc'); /* with Hex colour */
+    background-size: 4px 14px;
+    background-repeat: repeat;
+}

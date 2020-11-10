@@ -1,18 +1,19 @@
-import posts from './_posts.js';
+const fetch = require('node-fetch');
 
-const contents = JSON.stringify(
-  posts.map(post => {
-    return {
-      title: post.title,
-      slug: post.slug,
-    };
+export async function get(req, res) {
+  const { DEV_API_KEY } = process.env;
+  const URL = 'https://dev.to/api/articles?username=papaponmx';
+
+  fetch(URL, {
+    headers: {
+      'Content-Type': 'application/json',
+      'api-key': DEV_API_KEY,
+    },
   })
-);
-
-export function get(req, res) {
-  res.writeHead(200, {
-    'Content-Type': 'application/json',
-  });
-
-  res.end(contents);
+    .then(r => r.json())
+    .then(articles => {
+      const posts = articles.filter(post => post.id !== 286357);
+      res.end(JSON.stringify([...posts]));
+    })
+    .catch(error => console.log('🛑 Error on new_posts endpoint', error));
 }

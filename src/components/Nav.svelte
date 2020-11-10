@@ -1,25 +1,28 @@
-<style>
+<style lang="scss">
+  @import '../styles/_variables';
+  @import '../styles/_functions';
   nav {
-    border-bottom: 1px solid rgba(255, 62, 0, 0.1);
     font-weight: 300;
-    padding: 0 1em;
+    font-size: 1rem;
+    height: rvr(1.5);
+    padding: 0.5rem 1rem 0;
   }
 
   ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
   }
 
   /* clearfix */
   ul::after {
     content: '';
     display: block;
-    clear: both;
   }
 
   li {
     display: block;
-    float: left;
   }
 
   [aria-current] {
@@ -29,18 +32,18 @@
 
   [aria-current]::after {
     background-color: rgb(255, 62, 0);
-    bottom: -0.0625rem;
+    bottom: rvr(-0.0625);
     content: '';
     display: block;
-    height: 0.125rem;
+    height: rvr(0.125);
     position: absolute;
-    width: calc(100% - 1em);
+    width: (100% / rvr(1)) - rvr(1);
   }
 
   a {
     text-decoration: none;
-    padding: 1em 0.5em;
     display: block;
+    margin-right: 1rem;
   }
 </style>
 
@@ -73,16 +76,19 @@
         href="blog"
       >blog</a>
     </li>
-    <li>
-      <a
-        aria-current="{segment === 'portfolio' ? 'page' : undefined}"
-        rel="prefetch"
-        href="portfolio"
-      >portfolio</a>
-    </li>
+    {#if isDev}
+      <li>
+        <a
+          aria-current="{segment === 'portfolio' ? 'page' : undefined}"
+          rel="prefetch"
+          href="portfolio"
+        >portfolio</a>
+      </li>
+    {/if}
   </ul>
 </nav>
 
-<script>
+<script lang="typescript">
   export let segment;
+  const isDev: boolean = process.env.NODE_ENV === 'development';
 </script>

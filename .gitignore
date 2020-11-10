@@ -8,3 +8,9 @@ yarn-error.log
 .env
 
 .eslintcache
+
+cypress/videos/blog-post.spec.ts.mp4
+
+static/sitemap.xml
+
+cypress/videos/sitemap.spec.ts.mp4

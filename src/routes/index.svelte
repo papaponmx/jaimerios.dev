@@ -1,7 +1,10 @@
-<style>
+<style lang="scss">
+  @import '../styles/_variables';
+  @import '../styles/_functions';
+
   /**
-   * Routes/index.svelte
-   *  **/
+  * Routes/index.svelte
+  **/
 
   main {
     padding: 1rem;
@@ -10,9 +13,10 @@
   }
 
   h1 {
-    color: var(--pomegranate-color);
-    font-weight: 100;
-    margin-bottom: 0.25rem;
+    color: $pomegranate-color;
+    font-weight: 800;
+    font-size: 4.75rem;
+    line-height: 1;
   }
 
   header {
@@ -22,9 +26,15 @@
     align-items: flex-start;
   }
 
-  h3 {
-    font-weight: 400;
-    color: var(--mirage-color);
+  h1 {
+    margin-bottom: -0.5rem;
+  }
+  h2 {
+    color: $mirage-accent-color;
+    font-size: 2.75rem;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-top: 0;
   }
 
   @media (min-width: 40rem) {
@@ -33,44 +43,47 @@
     }
 
     h1 {
-      font-size: calc(var(--base-font-size) * 8);
+      font-size: 6rem;
+      line-height: 1.2;
     }
-    h3 {
+    h2 {
       font-weight: 200;
-      font-size: calc(var(--base-font-size) * 3);
+      font-size: 2.75rem;
+      margin-top: 0;
     }
 
     span {
       font-weight: 500;
-      /* filter: brightness(310%); */
-      color: var(--mirage-color-color);
+      color: $mirage-color;
     }
   }
 
   .cta-wrapper {
-    margin-top: calc(var(--spacing-unit) * 1);
+    margin-top: $spacing-unit * 1;
     display: flex;
     flex-direction: column;
     max-width: 150px;
-    font-size: calc(var(--spacing-unit) * 2);
+    font-size: $spacing-unit * 2;
     font-weight: 200;
   }
 
   a {
-    border-bottom: 1px solid var(--pomegranate-color);
+    // border-bottom: 1px solid $pomegranate-color;
     font-weight: 600;
-    color: var(--mirage-color);
+    color: $mirage-accent-color;
     text-decoration: none;
-    padding: calc(var(--spacing-unit) / 2);
-    margin-right: calc(var(--spacing-unit) / 2);
+    padding: 1rem 1.5rem;
+    margin-right: $spacing-unit / 2;
+    margin-bottom: 1.25rem;
     min-width: 100%;
+    line-height: 1.25;
   }
 
   a:hover,
   a:focus {
-    box-shadow: inset 0 0 0 3rem var(--pomegranate-color);
-    color: #ffffff;
-    transition-duration: 250ms;
+    box-shadow: inset 0 0 0 3rem $pomegranate-color;
+    color: white;
+    transition-duration: 300ms;
   }
 </style>
 
@@ -84,11 +97,15 @@
 
 <main>
   <header>
-    <h1>Hi, I am Jaime</h1>
-    <h3>Freelance <span>Front End</span> Developer</h3>
+    <h1>Hi, <wbr /> I am Jaime<wbr /></h1>
+    <h2>Freelance <wbr /> <span>Front End</span> <wbr /> Developer</h2>
   </header>
   <div class="cta-wrapper">
-    <a href="portfolio">Portfolio</a>
     <a href="blog">Blog</a>
+    {#if isDev}<a href="portfolio">Portfolio</a>{/if}
   </div>
 </main>
+
+<script lang="typescript">
+  const isDev: boolean = process.env.NODE_ENV === 'development';
+</script>

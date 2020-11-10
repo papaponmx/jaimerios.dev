@@ -1,34 +1,124 @@
-<style>
+<style lang="scss">
+  @import '../../styles/_functions';
+  @import '../../styles/_variables';
+
   ul {
-    margin: 0 0 1em 0;
-    line-height: 1.5;
     list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1rem;
+    padding: 0 3rem;
+  }
+  li {
+    border-radius: 20px;
+    color: $mirage-color;
+    max-width: rvr(25);
+    padding: rvr(1);
+    transition: all 0.3s ease;
   }
 
-  li {
-    /* border: 0.1px solid #aaa; */
-    color: var(--mirage-color);
-    min-height: calc(100vh - 6.25rem);
-    margin-bottom: 1rem;
-    padding: 3rem;
+  li:hover {
+    cursor: pointer;
   }
 
   li a {
+    border-bottom: none;
+    box-shadow: none;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  li:hover h2 {
+    color: $pomegranate-color;
   }
 
   h2 {
-    font-size: 4.25rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--mirage-color);
-    margin-bottom: 0;
-    font-weight: 200;
+    color: $mirage-accent-color;
+    font-size: rvr(1.2);
+    font-weight: 800;
   }
 
   time {
-    color: var(--napa-color);
-    font-size: 1.5rem;
-    margin-top: -2rem;
+    color: black;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 200;
+    margin-bottom: 0.75rem;
+  }
+
+  .row {
+    margin-top: -0.65rem;
+  }
+
+  .row span {
+    color: $mirage-accent-color;
+  }
+
+  @media screen and (max-width: 50em) {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.25;
+    }
+
+    ul {
+      margin: 0 0 1rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5;
+    }
+    ul {
+      padding: 0;
+    }
+    li,
+    li a {
+      max-width: calc(100% - 2rem);
+    }
+
+    li {
+      box-shadow: none;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    time {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  @media screen and (min-width: 50em) {
+    li:hover {
+      box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.25);
+      background: linear-gradient(
+        138deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 91%,
+        $pomegranate-color--lighter 91.1%,
+        $pomegranate-color--lighter 100%
+      );
+    }
+  }
+
+  h1 {
+    color: $mirage-accent-color;
+    // font-size: rvr(5);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: 7rem;
+      margin-bottom: -1rem;
+    }
   }
 </style>
 
@@ -36,44 +126,38 @@
   <title>Blog</title>
 </svelte:head>
 
-<!-- <h1>Recent posts</h1> -->
-
+<h1>Latest <wbr /> articles</h1>
+<HorizonalRule />
 <ul>
   {#each posts as post}
-    <li>
+    <li class="posts-list">
       <a rel="prefetch" href="blog/{post.slug}">
         <h2>{post.title}</h2>
-        <time>{new Date(post.published_at).toDateString()}</time>
-        <p>{post.description}</p>
+        <div class="row">
+          <span>{post.user.name}</span>
+          <time>{new Date(post.published_at).toDateString()}</time>
+        </div>
+        <Tags tagsList="{post.tag_list}" />
       </a>
     </li>
   {/each}
-  <!-- <button on:click={getNextFivePosts}>Get  new Posts</button> -->
 </ul>
 
-<script context="module">
-  // const getNextFivePosts = () => {
-  //   if (process.browser) {
-  //     fetch('blog/new_posts');
-  //   }
-  // };
-
+<script context="module" lang="typescript">
   export function preload({ _params, _query }, session) {
-    const { BLOG_NEW_POSTS_URL } = session;
-    return this.fetch(BLOG_NEW_POSTS_URL)
+    return this.fetch('/blog.json')
       .then(r => r.json())
-      .then(posts => {
+      .then((posts: Array<BlogPostPreview>) => {
         return { posts };
-      });
+      })
+      .catch(err => 'Error is ' + JSON.stringify(null, 2, err));
   }
-
-  // TODO: Add Intersection Observer API implementation
-  // What do I need to do?
-  // ✅ 1. Set initial blog post to 0
-  //  2. Get the next 5 blog posts
-  //  3. Update that markup.
 </script>
 
-<script>
-  export let posts;
+<script lang="typescript">
+  import type { BlogPostPreview } from '../../models/blog-posts-preview.interface';
+  import HorizonalRule from '../../components/HorizonalRule.svelte';
+  import Tags from '../../components/Tags.svelte';
+
+  export let posts: Array<BlogPostPreview>;
 </script>

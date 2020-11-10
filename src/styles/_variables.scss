@@ -1,0 +1,28 @@
+@import "./functions";
+
+
+  $baseline: 1.4;
+  /* Color Pallette  */
+  $baby-powder-color: #ffffff; /* Light shades: Use this color as the background for your dark-on-light designs, or the text color of an inverted design. */
+  /* $baby-powder-color: #f2f5f2; Light shades: Use this color as the background for your dark-on-light designs, or the text color of an inverted design. */
+  $napa-color: #ada191; /* Light accent: Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette. */
+  $pomegranate-color: #ff3e00; /* Main brand color: This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity. */
+  $pomegranate-color--lighter: #ff3e00d4; /* Main brand color: This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity. */
+  $twine-color: #bc9653; /* Dark accent: Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best. */
+  $rose-color: #a207d9;
+  $mirage-accent-color: #007dbf;
+  $celeste-color: #D2F1F9;
+  $mirage-color: #1b2b31; /* Dark shades: Use as the text color for dark-on-light designs, or as the background for inverted designs. */
+// $link-color: #E0410B;
+$link-color: #4B1807;
+$link-visited-color: #A84828;
+
+
+  $base-font-size: 1rem;
+  $footer-height: 4.6875rem;
+  $navigation-height: 12.5rem;
+  $main-height: 100vh / rvr(1);
+  $spacing-unit: 1.125rem;
+
+  // line-height: $baseline;
+

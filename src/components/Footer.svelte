@@ -1,10 +1,10 @@
-<style>
+<style lang="scss">
   footer {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    padding: var(--spacing-unit);
-    height: var(--footer-height);
+    padding: rvr(1);
+    height: $footer-height;
   }
 </style>
 

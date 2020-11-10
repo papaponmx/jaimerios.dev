@@ -1,41 +1,98 @@
-<style>
-  :global(:root) {
-    /* Color Pallette  */
-    --baby-powder-color: #f2f5f2; /* Light shades: Use this color as the background for your dark-on-light designs, or the text color of an inverted design. */
-    --napa-color: #ada191; /* Light accent: Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette. */
-    --pomegranate-color: #ff3e00; /* Main brand color: This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity. */
-    --twine-color: #bc9653; /* Dark accent: Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best. */
-    --mirage-color: #1b2b31; /* Dark shades: Use as the text color for dark-on-light designs, or as the background for inverted designs. */
-
-    --base-font-size: 1rem;
-    --footer-height: 4.6875rem;
-    --navigation-height: 12.5rem;
-    --main-height: calc(100vh - (var(--footer-height) * 2.25));
-    --spacing-unit: 1.125rem;
-  }
-
+<style lang="scss">
+  @import '../styles/_variables';
   main {
-    background-color: white;
     box-sizing: border-box;
-    height: var(--main-height);
-    padding: 2em;
+    padding: 0 1rem;
   }
+
+  /* .blog {
+    background-image: linear-gradient(
+      180deg,
+      $baby-powder-color 0%,
+      var(--mirage-accent-color) 124%
+    );
+  } */
 
   .wrapper {
     display: flex;
     flex-direction: column;
   }
+
+  /**
+   * Styles for Vertical Rhythmm
+   **/
+
+  :global(body) {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  :global(p) {
+    margin-bottom: 1rem;
+  }
+
+  :global(h1) {
+    margin-top: 0;
+    font-size: 7.594rem;
+  }
+
+  :global(h2) {
+    font-size: 5.063rem;
+  }
+
+  :global(h3) {
+    font-size: 3.375rem;
+  }
+
+  :global(h4) {
+    font-size: 2.25rem;
+  }
+
+  :global(h5) {
+    font-size: 1.5rem;
+  }
+
+  :global(small, .text_small) {
+    font-size: 0.667rem;
+  }
+
+  :global(body) {
+    margin: 0;
+  }
+  :global(a) {
+    box-shadow: inset 0 -1.5px 0 $mirage-accent-color;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $celeste-color;
+      border-bottom: 1px solid $celeste-color;
+      box-shadow: inset 0 -1.5px 0 $celeste-color;
+    }
+
+    &:active,
+    &:focus {
+      outline-color: $pomegranate-color--lighter;
+      outline-style: dotted;
+      outline-width: thick;
+    }
+  }
 </style>
 
 <div class="wrapper">
   <Nav segment="{segment}" />
-  <main>
+  <main class="{segment === 'blog' && 'blog'}">
     <slot />
   </main>
   <!-- <Footer /> -->
 </div>
 
-<script>
+<script lang="typescript">
   import Nav from '../components/Nav.svelte';
   // TODO: Add footer and keep it at the bottom
   // import Footer from '../components/Footer.svelte';
